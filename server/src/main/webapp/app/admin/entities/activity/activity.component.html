@@ -1,0 +1,86 @@
+<div>
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+  <div class="card">
+    <div class="card-header">
+      <h2 id="page-heading">
+        <fa-icon icon="running"></fa-icon>
+        <span jhiTranslate="ivolunteerManagerApp.activity.home.title">activitiess</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-activity"
+                [routerLink]="['./new']">
+          <fa-icon icon="plus"></fa-icon>
+          <span jhiTranslate="ivolunteerManagerApp.activity.home.createLabel">
+            Create a new activity
+            </span>
+        </button>
+      </h2>
+    </div>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="activities?.length === 0">
+      <span jhiTranslate="ivolunteerManagerApp.activity.home.notFound">No activitys found</span>
+    </div>
+
+    <div class="card-body" *ngIf="activities && activities.length > 0">
+
+      <div class="table-responsive" id="entities">
+        <table class="table table-striped" aria-describedby="page-heading">
+          <thead>
+          <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+            <th scope="col" jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col" jhiSortBy="name"><span
+              jhiTranslate="ivolunteerManagerApp.activity.name">Name</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col" jhiSortBy="attributesName"><span
+              jhiTranslate="ivolunteerManagerApp.activity.ruleType">Rule Attribtute</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let activity of activities ;trackBy: trackId">
+            <td>{{ activity.id }}</td>
+            <td>{{ activity.name }}</td>
+            <td><a
+              [routerLink]="['../rule-attribute', activity.attributesId, 'view']">{{ activity.attributesName }}</a>
+            </td>
+            <td class="text-right">
+              <div class="btn-group">
+                <button type="submit"
+                        [routerLink]="['./', activity.id, 'edit']"
+                        class="btn btn-primary btn-sm">
+                  <fa-icon icon="pencil-alt"></fa-icon>
+                  <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                </button>
+
+                <button type="submit" (click)="delete(activity)"
+                        class="btn btn-danger btn-sm">
+                  <fa-icon icon="times"></fa-icon>
+                  <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div *ngIf="activities && activities.length > 0">
+        <div class="row justify-content-center">
+          <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+
+        <div class="row justify-content-center">
+          <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage"
+                          [maxSize]="5" [rotate]="true" [boundaryLinks]="true"
+                          (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

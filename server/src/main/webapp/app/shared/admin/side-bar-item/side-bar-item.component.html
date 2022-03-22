@@ -1,0 +1,7 @@
+<a [routerLinkActiveOptions]="{ exact: true }"
+   class="dropdown-item sidebar-nav-item rounded p-2"
+   [routerLink]="item.routerLink"
+   routerLinkActive="active">
+  <fa-icon [icon]="item.icon"></fa-icon>
+  <span [jhiTranslate]="item.translationKey"></span>
+</a>

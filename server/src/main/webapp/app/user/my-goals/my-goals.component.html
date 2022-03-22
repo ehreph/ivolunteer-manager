@@ -1,0 +1,47 @@
+<div class="container-fluid row justify-content-center">
+  <div class="col-12 col-md-10">
+    <h2>
+      <span jhiTranslate="ivolunteerManagerApp.myGoals.home.title">My Goals</span>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+
+    <div class="mb-3 clearfix">
+      <jhi-my-goal-navigation></jhi-my-goal-navigation>
+      <div class="p-1 mt-2 mt-lg-0 float-lg-right ">
+        <label class="toggle user-select-none d-block">
+          <input class="toggle-checkbox" type="checkbox" [(ngModel)]="showRelative">
+          <div class="toggle-switch"></div>
+          <span *ngIf="showRelative" class="toggle-label font-weight-bold"
+                jhiTranslate="ivolunteerManagerApp.myGoals.showRelative"></span>
+          <span *ngIf="!showRelative" class="toggle-label font-weight-bold"
+                jhiTranslate="ivolunteerManagerApp.myGoals.showAbsolute"></span>
+        </label>
+      </div>
+    </div>
+
+
+    <div class="alert alert-warning" id="no-result" *ngIf="userGoals?.length === 0">
+      <span jhiTranslate="ivolunteerManagerApp.myGoals.noGoalsFound">you haven`t subscribed to any goals</span>
+    </div>
+    <div id="entities" *ngIf="userGoals && userGoals.length > 0">
+      <div *ngFor="let ug of userGoals ;let i =index; trackBy: trackId">
+        <jhi-goal-progress-card [myGoal]="ug" [showRelative]="showRelative"></jhi-goal-progress-card>
+      </div>
+    </div>
+
+    <div *ngIf="userGoals && userGoals.length > 0">
+      <div class="row justify-content-center">
+        <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+      </div>
+
+      <div class="row justify-content-center">
+        <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage"
+                        [maxSize]="5" [rotate]="true" [boundaryLinks]="true"
+                        (pageChange)="loadPage($event)"></ngb-pagination>
+      </div>
+    </div>
+  </div>
+
+</div>

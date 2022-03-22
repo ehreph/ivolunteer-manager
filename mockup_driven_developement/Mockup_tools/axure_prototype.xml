@@ -1,0 +1,2169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Sitemap>
+    <TreeMap>
+      <RootNodes>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>Overview</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>Ziel Suche</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>Ziel Vergleich</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>User Aktivitäten</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>User Competences</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>User Abzeichen</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+      </RootNodes>
+    </TreeMap>
+  </Sitemap>
+  <Mastermap>
+    <TreeMap>
+      <RootNodes>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>Ziel Klimaschutz Fahrradfahren</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+        <TreeMapNode>
+          <NodeType>Folder</NodeType>
+          <NodeValue>base</NodeValue>
+          <ChildNodes>
+            <TreeMapNode>
+              <NodeType>Folder</NodeType>
+              <NodeValue>components</NodeValue>
+              <ChildNodes>
+                <TreeMapNode>
+                  <NodeType>Folder</NodeType>
+                  <NodeValue>general</NodeValue>
+                  <ChildNodes>
+                    <TreeMapNode>
+                      <NodeType>PackageHandle</NodeType>
+                      <NodeValue>competenceCard</NodeValue>
+                      <ChildNodes />
+                    </TreeMapNode>
+                    <TreeMapNode>
+                      <NodeType>PackageHandle</NodeType>
+                      <NodeValue>userActivity</NodeValue>
+                      <ChildNodes />
+                    </TreeMapNode>
+                    <TreeMapNode>
+                      <NodeType>PackageHandle</NodeType>
+                      <NodeValue>myGoalsCard</NodeValue>
+                      <ChildNodes />
+                    </TreeMapNode>
+                    <TreeMapNode>
+                      <NodeType>PackageHandle</NodeType>
+                      <NodeValue>goalInformationCard</NodeValue>
+                      <ChildNodes />
+                    </TreeMapNode>
+                    <TreeMapNode>
+                      <NodeType>PackageHandle</NodeType>
+                      <NodeValue>abzeichen</NodeValue>
+                      <ChildNodes />
+                    </TreeMapNode>
+                  </ChildNodes>
+                </TreeMapNode>
+                <TreeMapNode>
+                  <NodeType>Folder</NodeType>
+                  <NodeValue>header_footer</NodeValue>
+                  <ChildNodes>
+                    <TreeMapNode>
+                      <NodeType>PackageHandle</NodeType>
+                      <NodeValue>footerComponent</NodeValue>
+                      <ChildNodes />
+                    </TreeMapNode>
+                    <TreeMapNode>
+                      <NodeType>PackageHandle</NodeType>
+                      <NodeValue>headerComponent</NodeValue>
+                      <ChildNodes />
+                    </TreeMapNode>
+                  </ChildNodes>
+                </TreeMapNode>
+              </ChildNodes>
+            </TreeMapNode>
+          </ChildNodes>
+        </TreeMapNode>
+        <TreeMapNode>
+          <NodeType>PackageHandle</NodeType>
+          <NodeValue>baseComponent</NodeValue>
+          <ChildNodes />
+        </TreeMapNode>
+      </RootNodes>
+    </TreeMap>
+  </Mastermap>
+  <Pages>
+    <Page>
+      <Diagram>
+        <Widgets>
+          <MasterInstance>
+            <MasterName>baseComponent</MasterName>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="667" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </MasterInstance>
+          <DynamicPanel>
+            <PanelStates>
+              <PanelDiagram>
+                <Widgets>
+                  <Shape>
+                    <ShapeType>Rectangle</ShapeType>
+                    <FootnoteNumber>2</FootnoteNumber>
+                    <Name>label_card_header</Name>
+                    <Rectangle>
+                      <Rectangle X="5" Y="7" Width="365" Height="40" />
+                    </Rectangle>
+                    <Bold>True</Bold>
+                    <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+                    <BorderWidth>0</BorderWidth>
+                    <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+                    <FontName>Arial</FontName>
+                    <FontSize>18</FontSize>
+                    <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+                    <HorizontalAlignment>Near</HorizontalAlignment>
+                    <Italic>False</Italic>
+                    <Underline>False</Underline>
+                    <VerticalAlignment>Near</VerticalAlignment>
+                    <Text>Meine Ziele</Text>
+                  </Shape>
+                </Widgets>
+              </PanelDiagram>
+            </PanelStates>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>content</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="65" Width="375" Height="526" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </DynamicPanel>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>Overview</Name>
+      </PackageInfo>
+    </Page>
+    <Page>
+      <Diagram>
+        <Widgets>
+          <MasterInstance>
+            <MasterName>baseComponent</MasterName>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="667" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </MasterInstance>
+          <DynamicPanel>
+            <PanelStates>
+              <PanelDiagram>
+                <Widgets>
+                  <Shape>
+                    <ShapeType>Rectangle</ShapeType>
+                    <FootnoteNumber>2</FootnoteNumber>
+                    <Name>label_card_header</Name>
+                    <Rectangle>
+                      <Rectangle X="10" Y="15" Width="73" Height="37" />
+                    </Rectangle>
+                    <Bold>True</Bold>
+                    <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+                    <BorderWidth>0</BorderWidth>
+                    <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+                    <FontName>Arial</FontName>
+                    <FontSize>24</FontSize>
+                    <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+                    <HorizontalAlignment>Near</HorizontalAlignment>
+                    <Italic>False</Italic>
+                    <Underline>False</Underline>
+                    <VerticalAlignment>Near</VerticalAlignment>
+                    <Text>Ziele</Text>
+                  </Shape>
+                </Widgets>
+              </PanelDiagram>
+            </PanelStates>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>content</Name>
+            <Rectangle>
+              <Rectangle X="2" Y="65" Width="370" Height="526" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </DynamicPanel>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>Ziel Suche</Name>
+      </PackageInfo>
+    </Page>
+    <Page>
+      <Diagram>
+        <Widgets />
+      </Diagram>
+      <PackageInfo>
+        <Name>Ziel Vergleich</Name>
+      </PackageInfo>
+    </Page>
+    <Page>
+      <Diagram>
+        <Widgets>
+          <MasterInstance>
+            <MasterName>baseComponent</MasterName>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="667" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </MasterInstance>
+          <DynamicPanel>
+            <PanelStates>
+              <PanelDiagram>
+                <Widgets />
+              </PanelDiagram>
+            </PanelStates>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>content_my_activites</Name>
+            <Rectangle>
+              <Rectangle X="12" Y="129" Width="363" Height="461" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </DynamicPanel>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_card_header</Name>
+            <Rectangle>
+              <Rectangle X="12" Y="92" Width="352" Height="37" />
+            </Rectangle>
+            <Bold>True</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>24</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Deine Aktivitäten</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>User Aktivitäten</Name>
+      </PackageInfo>
+    </Page>
+    <Page>
+      <Diagram>
+        <Widgets>
+          <MasterInstance>
+            <MasterName>baseComponent</MasterName>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="667" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </MasterInstance>
+          <DynamicPanel>
+            <PanelStates>
+              <PanelDiagram>
+                <Widgets />
+              </PanelDiagram>
+            </PanelStates>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>content_my_activites</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="129" Width="375" Height="461" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </DynamicPanel>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_card_header</Name>
+            <Rectangle>
+              <Rectangle X="10" Y="74" Width="352" Height="37" />
+            </Rectangle>
+            <Bold>True</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>24</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Deine Kompetenzen</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>User Competences</Name>
+      </PackageInfo>
+    </Page>
+    <Page>
+      <Diagram>
+        <Widgets>
+          <MasterInstance>
+            <MasterName>baseComponent</MasterName>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="667" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </MasterInstance>
+          <DynamicPanel>
+            <PanelStates>
+              <PanelDiagram>
+                <Widgets />
+              </PanelDiagram>
+            </PanelStates>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>content_abzeichen</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="113" Width="375" Height="480" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </DynamicPanel>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_deine_abzeichen</Name>
+            <Rectangle>
+              <Rectangle X="11" Y="79" Width="198" Height="34" />
+            </Rectangle>
+            <Bold>True</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>18</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Deine Abzeichen</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>User Abzeichen</Name>
+      </PackageInfo>
+    </Page>
+  </Pages>
+  <Masters>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>3</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="120" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 194, 128, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>2</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="120" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 194, 128, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>1</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="120" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 194, 128, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="105" Width="350" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 0, 0, 0)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (128, 215, 215, 215)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>progress</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="105" Width="136" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 215, 215, 215)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (238, 194, 128, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="308" Y="105" Width="42" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>33/144</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="13" Y="13" Width="330" Height="16" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 170, 170, 170)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Linz,Klimabündniss</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="13" Y="39" Width="330" Height="18" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>12</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>50.000 km Fahrradfahren für den  Klimaschutz</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="99" Y="70" Width="25" Height="25" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>8,25</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="160" Y="70" Width="22" Height="25" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>8,25</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Ellipse</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="13" Y="75" Width="20" Height="20" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>1</BorderWidth>
+            <FillColor>Color(argb) = (255, 0, 157, 217)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Ellipse</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="21" Y="75" Width="20" Height="20" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>1</BorderWidth>
+            <FillColor>Color(argb) = (255, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="52" Y="77" Width="24" Height="16" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>105</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>Ziel Klimaschutz Fahrradfahren</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>3</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="96" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 170, 170, 170)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>2</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="96" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 170, 170, 170)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>1</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="96" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 170, 170, 170)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>competence_name_label</Name>
+            <Rectangle>
+              <Rectangle X="10" Y="35" Width="236" Height="26" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>16,5</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Kommunikation</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Ellipse</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>level_competence</Name>
+            <Rectangle>
+              <Rectangle X="246" Y="6" Width="84" Height="84" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>30</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text>10</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>competenceCard</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>3</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="79" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (37, 129, 211, 248)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>2</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="79" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (37, 129, 211, 248)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>1</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="79" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (37, 129, 211, 248)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>companyName</Name>
+            <Rectangle>
+              <Rectangle X="13" Y="13" Width="207" Height="16" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 170, 170, 170)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Rotes Kreuz</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>goalName</Name>
+            <Rectangle>
+              <Rectangle X="13" Y="39" Width="207" Height="18" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>12</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Basisdienst - Pflichtstunden</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>image_increase</Name>
+            <Rectangle>
+              <Rectangle X="310" Y="25" Width="31" Height="37" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 112, 182, 3)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>8,25</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_recent_progress</Name>
+            <Rectangle>
+              <Rectangle X="231" Y="25" Width="64" Height="16" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>5 Stunden</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_activity_date</Name>
+            <Rectangle>
+              <Rectangle X="231" Y="45" Width="79" Height="17" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>20.10.2020</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>userActivity</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>3</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="120" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>2</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="120" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>1</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="120" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>companyName</Name>
+            <Rectangle>
+              <Rectangle X="13" Y="13" Width="330" Height="16" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 170, 170, 170)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Rotes Kreuz</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>goalName</Name>
+            <Rectangle>
+              <Rectangle X="13" Y="39" Width="330" Height="18" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>12</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Basisdienst - Pflichtstunden</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_comment</Name>
+            <Rectangle>
+              <Rectangle X="100" Y="70" Width="25" Height="25" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>8,25</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_share</Name>
+            <Rectangle>
+              <Rectangle X="160" Y="70" Width="22" Height="25" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>8,25</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Ellipse</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="13" Y="75" Width="20" Height="20" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>1</BorderWidth>
+            <FillColor>Color(argb) = (255, 0, 157, 217)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Ellipse</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="22" Y="75" Width="20" Height="20" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>1</BorderWidth>
+            <FillColor>Color(argb) = (255, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="52" Y="77" Width="24" Height="16" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>105</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>progress_full</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="105" Width="350" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 0, 0, 0)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (128, 215, 215, 215)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Interaction>
+              <Events>
+                <Event EventType="Other">
+                  <EventDescription>Resized:
+    Set Size of progress_current to 150 * [[currentAmount]] [[Math./]] [[amountNeeded]] x 15 anchor top left linear 500ms</EventDescription>
+                </Event>
+              </Events>
+            </Interaction>
+            <Name>progress_current</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="105" Width="136" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 215, 215, 215)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (254, 251, 198, 119)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>progressMax</Name>
+            <Rectangle>
+              <Rectangle X="323" Y="105" Width="27" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>144</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>progressCurrent</Name>
+            <Rectangle>
+              <Rectangle X="293" Y="105" Width="22" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>33</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_divide</Name>
+            <Rectangle>
+              <Rectangle X="315" Y="105" Width="8" Height="15" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>/</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>myGoalsCard</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>3</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="149" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>2</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="149" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>1</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="350" Height="149" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (64, 245, 154, 35)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button</Name>
+            <Rectangle>
+              <Rectangle X="284" Y="84" Width="66" Height="65" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 3, 157, 18)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Far</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Far</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_img</Name>
+            <Rectangle>
+              <Rectangle X="299" Y="99" Width="37" Height="37" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>8,25</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>goalInformation</Name>
+            <Rectangle>
+              <Rectangle X="13" Y="67" Width="247" Height="69" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan </Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>companyName</Name>
+            <Rectangle>
+              <Rectangle X="13" Y="13" Width="323" Height="16" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 170, 170, 170)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 127, 127, 127)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Rotes Kreuz</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>goalName</Name>
+            <Rectangle>
+              <Rectangle X="13" Y="39" Width="323" Height="18" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>12</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Basisdienst - Pflichtstunden</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>goalInformationCard</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>3</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="125" Height="90" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>2</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="125" Height="90" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>1</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="125" Height="90" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Image>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>image_abzeichen</Name>
+            <Rectangle>
+              <Rectangle X="33" Y="29" Width="59" Height="52" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Image>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_abzeichen</Name>
+            <Rectangle>
+              <Rectangle X="6" Y="8" Width="113" Height="17" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Abzeichen name</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>abzeichen</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>footer_background</Name>
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="76" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>1</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_background</Name>
+            <Rectangle>
+              <Rectangle X="282" Y="10" Width="71" Height="56" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_competences</Name>
+            <Rectangle>
+              <Rectangle X="299" Y="16" Width="37" Height="31" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_competence</Name>
+            <Rectangle>
+              <Rectangle X="282" Y="53" Width="71" Height="11" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 242, 242, 242)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Kompetenzen</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_background</Name>
+            <Rectangle>
+              <Rectangle X="215" Y="10" Width="52" Height="56" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_badges</Name>
+            <Rectangle>
+              <Rectangle X="215" Y="53" Width="52" Height="9" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 242, 242, 242)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Abzeichen</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_badges</Name>
+            <Rectangle>
+              <Rectangle X="226" Y="16" Width="31" Height="31" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_background</Name>
+            <Rectangle>
+              <Rectangle X="153" Y="10" Width="48" Height="56" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_goals</Name>
+            <Rectangle>
+              <Rectangle X="153" Y="53" Width="48" Height="9" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 242, 242, 242)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Ziele</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_img</Name>
+            <Rectangle>
+              <Rectangle X="159" Y="16" Width="37" Height="31" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 242, 242, 242)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_background</Name>
+            <Rectangle>
+              <Rectangle X="87" Y="10" Width="52" Height="56" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_img</Name>
+            <Rectangle>
+              <Rectangle X="99" Y="16" Width="29" Height="31" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 242, 242, 242)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_activities</Name>
+            <Rectangle>
+              <Rectangle X="87" Y="53" Width="52" Height="9" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 242, 242, 242)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Aktivitäten</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_background</Name>
+            <Rectangle>
+              <Rectangle X="22" Y="10" Width="48" Height="56" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 127, 127, 127)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Vector</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>button_img</Name>
+            <Rectangle>
+              <Rectangle X="32" Y="16" Width="29" Height="31" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (0, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (255, 242, 242, 242)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_current</Name>
+            <Rectangle>
+              <Rectangle X="22" Y="53" Width="48" Height="9" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 242, 242, 242)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>7,5</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>Aktuelles</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>footerComponent</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="66" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>1</BorderWidth>
+            <FillColor>Color(argb) = (255, 76, 78, 88)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 29, 25, 219)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_total</Name>
+            <Rectangle>
+              <Rectangle X="292" Y="6" Width="46" Height="13" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 242, 242, 242)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>gesamt</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>totalGoalsAmount</Name>
+            <Rectangle>
+              <Rectangle X="291" Y="23" Width="49" Height="30" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>24</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>8</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_finished</Name>
+            <Rectangle>
+              <Rectangle X="163" Y="6" Width="61" Height="13" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 242, 242, 242)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>bestätigte</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>finishedGoalsAmount</Name>
+            <Rectangle>
+              <Rectangle X="169" Y="23" Width="49" Height="30" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>24</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>6</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>label_current</Name>
+            <Rectangle>
+              <Rectangle X="34" Y="6" Width="49" Height="13" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>10,5</FontSize>
+            <ForeColor>Color(argb) = (255, 242, 242, 242)</ForeColor>
+            <HorizontalAlignment>Near</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>aktuelle</Text>
+          </Shape>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name>currentGoalsAmount</Name>
+            <Rectangle>
+              <Rectangle X="34" Y="23" Width="49" Height="30" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 255, 255, 255)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>24</FontSize>
+            <ForeColor>Color(argb) = (255, 255, 255, 255)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Near</VerticalAlignment>
+            <Text>1</Text>
+          </Shape>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>headerComponent</Name>
+      </PackageInfo>
+    </Master>
+    <Master>
+      <Diagram>
+        <Widgets>
+          <Shape>
+            <ShapeType>Rectangle</ShapeType>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="667" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>1</BorderWidth>
+            <FillColor>Color(argb) = (255, 242, 242, 242)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Text />
+          </Shape>
+          <MasterInstance>
+            <MasterName>footerComponent</MasterName>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="591" Width="375" Height="76" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </MasterInstance>
+          <MasterInstance>
+            <MasterName>headerComponent</MasterName>
+            <FootnoteNumber>2</FootnoteNumber>
+            <Name />
+            <Rectangle>
+              <Rectangle X="0" Y="0" Width="375" Height="66" />
+            </Rectangle>
+            <Bold>False</Bold>
+            <BorderColor>Color(argb) = (255, 121, 121, 121)</BorderColor>
+            <BorderWidth>0</BorderWidth>
+            <FillColor>Color(argb) = (0, 255, 255, 255)</FillColor>
+            <FontName>Arial</FontName>
+            <FontSize>9,75</FontSize>
+            <ForeColor>Color(argb) = (255, 51, 51, 51)</ForeColor>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <Italic>False</Italic>
+            <Underline>False</Underline>
+            <VerticalAlignment>Center</VerticalAlignment>
+          </MasterInstance>
+        </Widgets>
+      </Diagram>
+      <PackageInfo>
+        <Name>baseComponent</Name>
+      </PackageInfo>
+    </Master>
+  </Masters>
+</Document>

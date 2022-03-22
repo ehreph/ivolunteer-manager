@@ -1,0 +1,22 @@
+<nav class="navbar navbar-dark navbar-expand bg-dark ">
+    <a class="navbar-toggler pointer d-block mr-2" href="javascript:void(0);"
+       *jhiHasAnyAuthority="'ROLE_ADMIN'"
+       aria-controls="sidebar" aria-expanded="false" aria-label="Toggle Sidebar" (click)="toggleSidebar()">
+        <fa-icon [icon]="getSideBarIcon()"></fa-icon>
+    </a>
+
+    <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
+        <span class="logo-img"></span>
+        <span class="navbar-version">{{ version }}</span>
+    </a>
+    <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed"
+         [ngSwitch]="isAuthenticated()">
+
+        <ul class="navbar-nav ml-auto">
+            <jhi-user-navigation class="d-md-flex d-none" [collapseNavbar]="collapseNavbar"></jhi-user-navigation>
+            <jhi-admin-dropdown [collapseNavbar]="collapseNavbar"></jhi-admin-dropdown>
+            <jhi-switch-language [collapseNavbar]="collapseNavbar"></jhi-switch-language>
+            <jhi-account-dropdown [collapseNavbar]="collapseNavbar"></jhi-account-dropdown>
+        </ul>
+    </div>
+</nav>

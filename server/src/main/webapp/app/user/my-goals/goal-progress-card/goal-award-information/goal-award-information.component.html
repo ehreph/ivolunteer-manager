@@ -1,0 +1,31 @@
+<div *ngIf="goal.awardedCompetences && goal.awardedCompetences.length>0">
+
+  <div class="mb-2">
+    <button type="button" class="btn btn-sm btn-outline-primary" (click)="toggleAwards()"
+            [attr.aria-expanded]="showAwards">
+      <span *ngIf="!showAwards" jhiTranslate="ivolunteerManagerApp.myGoals.showAwards"> </span>
+      <span *ngIf="showAwards" jhiTranslate="ivolunteerManagerApp.myGoals.hideAwards"> </span>
+    </button>
+  </div>
+
+
+  <ul class="list-group" [(ngbCollapse)]="!showAwards">
+    <li *ngFor="let awards of goal.awardedCompetences" class="list-group-item">
+      <div [ngSwitch]="awards.awardType">
+        <ng-container *ngSwitchCase="GlobalType.BADGE">
+          <fa-icon icon="award"></fa-icon>
+          <span class="font-weight-bold">{{awards.entityName}}</span>
+        </ng-container>
+
+        <ng-container *ngSwitchCase="GlobalType.COMPETENCE">
+            <span class="font-weight-bold">
+              <fa-icon icon="book"></fa-icon>
+              {{awards.entityName}}
+              {{awards.increaseLevel}} {{'level'|translate}}
+              <fa-icon class="text-success" icon="arrow-alt-circle-up" [transform]="{rotate: 45}"></fa-icon>
+            </span>
+        </ng-container>
+      </div>
+    </li>
+  </ul>
+</div>

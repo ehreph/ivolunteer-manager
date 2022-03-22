@@ -1,0 +1,28 @@
+{
+  "ivolunteerManagerApp": {
+    "userGoals": {
+      "created": "A new User Goals is created with identifier {{ param }}",
+      "currentValue": "Current Value",
+      "delete": {
+        "question": "Are you sure you want to delete the User Goal {{ name }}?"
+      },
+      "deleted": "A User Goals is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "User Goals"
+      },
+      "finished": "Completed",
+      "finished.false": "open",
+      "finished.null": "open",
+      "finished.true": "finished",
+      "goal": "Goal",
+      "home": {
+        "createLabel": "Create a new User Goals",
+        "createOrEditLabel": "Create or edit a User Goals",
+        "notFound": "No Goals found",
+        "title": "Goals"
+      },
+      "updated": "A User Goals is updated with identifier {{ param }}",
+      "userId": "User Id"
+    }
+  }
+}

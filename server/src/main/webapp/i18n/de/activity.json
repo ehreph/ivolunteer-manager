@@ -1,0 +1,30 @@
+{
+  "ivolunteerManagerApp": {
+    "activity": {
+      "created": "Aktivität wurde erstellt",
+      "delete": {
+        "question": "Soll die Aktivität {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Die Aktivität wurde gelöscht!",
+      "detail": {
+        "title": "Aktivitäten"
+      },
+      "home": {
+        "createLabel": "Aktivität erstellen",
+        "createOrEditLabel": "Aktivität erstellen oder bearbeiten",
+        "notFound": "keine Aktivitäten gefunden",
+        "title": "Aktivitäten",
+        "trackProgress": "Aktivitätsfortschritt eintragen"
+      },
+      "name": "Name",
+      "ruleType": "Messwert",
+      "trackProgress": {
+        "amount": "Anzahl",
+        "date": "Datum",
+        "instance": "Aktivität"
+      },
+      "updated": "Aktivität wurde aktualisiert"
+    },
+    "activityProgress.created": "Aktivitätsfortschritt wurde gespeichert"
+  }
+}

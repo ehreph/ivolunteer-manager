@@ -1,0 +1,9 @@
+<span *ngIf="completed else notAchieved"
+      class="text-success">
+      <fa-icon [icon]="faCheckCircle"></fa-icon>
+    </span>
+<ng-template #notAchieved>
+      <span class="text-danger">
+        <fa-icon [icon]="faTimesCircle"></fa-icon>
+      </span>
+</ng-template>

@@ -1,0 +1,29 @@
+{
+  "name": "UserBadge",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "badge",
+      "otherEntityRelationshipName": "userBadge",
+      "relationshipName": "badge",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210315164949",
+  "entityTableName": "user_badge",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

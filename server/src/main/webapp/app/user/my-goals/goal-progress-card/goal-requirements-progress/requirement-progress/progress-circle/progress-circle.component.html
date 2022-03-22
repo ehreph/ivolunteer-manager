@@ -1,0 +1,45 @@
+<div *ngIf="showRelative">
+
+  <circle-progress
+    [percent]="data.percentage"
+    [subtitle]="data.subTitle"
+    [showTitle]="true"
+    [outerStrokeColor]="'#4882c2'"
+    [innerStrokeColor]="'#e7e8ea'"
+    [subtitleColor]="'#000000'"
+    [titleFontSize]="'28'"
+    [subtitleFontSize]="'20'"
+    [unitsFontSize]="'28'"
+    [showSubtitle]="true"
+    [animation]="true"
+    [animationDuration]="500"
+    [startFromZero]="false"
+    [responsive]="true"
+  >
+  </circle-progress>
+</div>
+<div *ngIf="!showRelative">
+<!--  absolute-->
+  <circle-progress
+    [percent]="data.percentage"
+    [subtitle]="data.subTitle"
+    [title]="data.title"
+    [units]="data.unit"
+    [showTitle]="true"
+    [outerStrokeColor]="'#4882c2'"
+    [innerStrokeColor]="'#e7e8ea'"
+    [subtitleColor]="'#000000'"
+    [titleFontSize]="'28'"
+    [subtitleFontSize]="'20'"
+    [unitsFontSize]="'28'"
+    [showSubtitle]="true"
+    [animation]="true"
+    [animationDuration]="500"
+    [startFromZero]="false"
+    [responsive]="true"
+  >
+  </circle-progress>
+
+</div>
+
+

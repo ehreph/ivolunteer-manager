@@ -1,0 +1,26 @@
+{
+  "ivolunteerManagerApp": {
+    "goalAward": {
+      "awardType": "Kategorie",
+      "created": "Zielbelohnung wurde erstellt",
+      "delete": {
+        "question": "Soll die Zielbelohnung {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Zielbelohnung wurde gelöscht",
+      "detail": {
+        "title": "Zielbelohnung"
+      },
+      "generalId": "Allgemeine ID",
+      "goal": "Ziel",
+      "home": {
+        "createLabel": "Zielbelohnung erstellen",
+        "createOrEditLabel": "Zielbelohnung erstellen oder bearbeiten",
+        "notFound": "keine Zielbelohnungen gefunden",
+        "title": "Zielbelohnungen"
+      },
+      "increaseLevel": "Erfahrung",
+      "instance": "Objekt",
+      "updated": "Zielbelohnung wurde aktualisiert"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd"
+    objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1635082237052-3" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="general_id" baseTableName="goal_requirements"
+                                 constraintName="FK_GOAL_REQUIREMENTS_ON_GENERAL" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1635082237052-1" author="philipp">
+        <dropNotNullConstraint columnDataType="boolean" columnName="is_personal" tableName="base_data"/>
+    </changeSet>
+    <changeSet id="1635082237052-2" author="philipp">
+        <dropNotNullConstraint columnDataType="double" columnName="max_level" tableName="base_data"/>
+    </changeSet>
+
+    <changeSet id="20210315164849-1-data" author="jhipster" context="faker">
+        <loadData
+            file="config/liquibase/fake-data/base_data.csv"
+            separator=";"
+            tableName="base_data">
+            <column name="id" type="numeric"/>
+            <column name="name" type="string"/>
+            <column name="attributes_id" type="numeric"/>
+            <column name="max_level" type="numeric"/>
+            <column name="created_by_user_id" type="numeric"/>
+            <column name="is_personal" type="boolean"/>
+            <column name="base_type" type="string"/>
+            <column name="info" type="string"/>
+            <column name="institution_id" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

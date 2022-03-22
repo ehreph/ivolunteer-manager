@@ -1,0 +1,30 @@
+{
+  "ivolunteerManagerApp": {
+    "activity": {
+      "created": "A new Activity is created with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Activity {{ name }}?"
+      },
+      "deleted": "A Activity is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "Activity"
+      },
+      "home": {
+        "createLabel": "Create a new Activity",
+        "createOrEditLabel": "Create or edit a Activity",
+        "notFound": "No Activities found",
+        "title": "Activities",
+        "trackProgress": "Track Activity progress"
+      },
+      "name": "Name",
+      "ruleType": "Rule Attribute (Measurement)",
+      "trackProgress": {
+        "amount": "Amount",
+        "date": "Date",
+        "instance": "Activity"
+      },
+      "updated": "A Activity is updated with identifier {{ param }}"
+    },
+    "activityProgress.created": "Progress has been tracked"
+  }
+}

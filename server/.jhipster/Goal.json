@@ -1,0 +1,45 @@
+{
+  "name": "Goal",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "info",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "goalAward",
+      "otherEntityRelationshipName": "goal",
+      "relationshipName": "awardedCompetence"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "goalRequirements",
+      "otherEntityRelationshipName": "goal",
+      "relationshipName": "requirements"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "institution",
+      "otherEntityRelationshipName": "institutionGoals",
+      "relationshipName": "institution",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210315165449",
+  "entityTableName": "goal",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

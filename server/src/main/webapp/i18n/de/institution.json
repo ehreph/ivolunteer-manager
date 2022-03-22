@@ -1,0 +1,24 @@
+{
+  "ivolunteerManagerApp": {
+    "institution": {
+      "created": "Institution wurde erstellt",
+      "delete": {
+        "question": "Soll die Institution {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Institution wurde gelöscht",
+      "description": "Beschreibung",
+      "detail": {
+        "title": "Institution"
+      },
+      "home": {
+        "createLabel": "Institution erstellen",
+        "createOrEditLabel": "Institution erstellen oder bearbeiten",
+        "notFound": "Keine Institutionen gefunden",
+        "title": "Institutionen"
+      },
+      "institutionGoals": "Institutionsziele",
+      "name": "Name",
+      "updated": "Institution wurde aktualisiert"
+    }
+  }
+}

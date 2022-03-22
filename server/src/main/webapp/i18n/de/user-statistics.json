@@ -1,0 +1,19 @@
+{
+  "profile": {
+    "compare": "vergleichen",
+    "compareToUser": "Vergleiche mit Benutzer",
+    "finishedGoalsPerDay": "Abgeschlossene Ziele pro Tag",
+    "finishedGoalsPerMonth": "Abgeschlossene Ziele pro Monat",
+    "home": {
+      "title": "Benutzerprofil"
+    },
+    "item": {
+      "finishedGoals": "Abgeschlossene Ziele",
+      "goals": "Ziele",
+      "openGoals": "Offene Ziele"
+    },
+    "yourActivities": "Deine Aktivitäten und Statistiken",
+    "yourCompetences": "Deine Kompetenzen",
+    "yourProgress": "Dein Fortschritt"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "ivolunteerManagerApp": {
+    "goalAward": {
+      "awardType": "Award Type",
+      "created": "A new Goal Award is created with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Goal Award {{ id }}?"
+      },
+      "deleted": "A Goal Award is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "Goal Award"
+      },
+      "generalId": "General Id",
+      "goal": "Goal",
+      "home": {
+        "createLabel": "Create a new Goal Award",
+        "createOrEditLabel": "Create or edit a Goal Award",
+        "notFound": "No Goal Awards found",
+        "title": "Goal Awards"
+      },
+      "increaseLevel": "Increase Level",
+      "instance": "Object",
+      "updated": "A Goal Award is updated with identifier {{ param }}"
+    }
+  }
+}

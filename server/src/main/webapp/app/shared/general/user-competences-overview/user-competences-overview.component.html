@@ -1,0 +1,73 @@
+<div class=" card-header">
+    <div class="row align-items-center">
+        <h3 class="col-auto" jhiTranslate="ivolunteerManagerApp.userCompetence.home.title">User Competences</h3>
+        <div class="col" *ngIf="isAdminPage">
+            <button (click)="openUpdateModal(null)" class="btn btn-primary float-right" type="button">
+                <fa-icon icon="plus"></fa-icon>&nbsp;<span>{{'entity.action.add'|translate}}</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="userCompetences?.length === 0" class="alert alert-warning" id="no-result">
+    <span jhiTranslate="ivolunteerManagerApp.userCompetence.home.notFound">No userCompetences found</span>
+</div>
+
+<div *ngIf="userCompetences && userCompetences.length > 0">
+    <div class="table-responsive" id="entities">
+        <table aria-describedby="page-heading" class="table table-striped">
+            <thead>
+            <tr [(ascending)]="ascending" [(predicate)]="predicate" [callback]="loadPage.bind(this)" jhiSort>
+                <th scope="col" jhiSortBy="compName"><span jhiTranslate="ivolunteerManagerApp.userCompetence.comp">Competence</span>
+                    <fa-icon icon="sort"></fa-icon>
+                </th>
+                <th scope="col" jhiSortBy="userLevel"><span
+                    jhiTranslate="ivolunteerManagerApp.userCompetence.userLevel">User Level</span>
+                    <fa-icon icon="sort"></fa-icon>
+                </th>
+                <th scope="col" *ngIf="isAdminPage"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let userCompetence of userCompetences ;trackBy: trackId">
+                <td>
+                    <div *ngIf="userCompetence.compId">
+                        <a *ngIf="isAdminPage"
+                           [routerLink]="['/competence', userCompetence.compId , 'view']">{{ userCompetence.compName }}</a>
+                        <span *ngIf="!isAdminPage">{{ userCompetence.compName }}</span>
+                    </div>
+                </td>
+                <td>{{ userCompetence.userLevel }}</td>
+                <td *ngIf="isAdminPage" class="text-right">
+                    <div class="btn-group">
+                        <button type="button"
+                                (click)="openUpdateModal(userCompetence)"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon icon="pencil-alt"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+
+                        <button type="button" (click)="delete(userCompetence)"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon icon="times"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="userCompetences && userCompetences.length > 0">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage"
+                            [maxSize]="5" [rotate]="true" [boundaryLinks]="true"
+                            (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
+    </div>
+</div>

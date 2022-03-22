@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-lg-8">
+            <div class="card mb-3">
+                <div class="card-img-top user-header-bg"></div>
+                <div class="card-body">
+                    <p>
+                        <span class="h3" jhiTranslate="profile.yourProgress">Your Progress</span>
+                    </p>
+                    <div *ngIf="userStats" class="row align-items-start ">
+                        <div jhi-info-item class="col" translationKey="profile.item.finishedGoals"
+                             [value]="userStats.finishedGoals"></div>
+                        <div jhi-info-item class="col" translationKey="profile.item.openGoals"
+                             [value]="userStats.openGoals"></div>
+                    </div>
+
+
+                    <!--                    <div class="col-6" style="display: block;">-->
+                    <!--                        <jhi-recent-activities></jhi-recent-activities>-->
+                    <!--                    </div>-->
+                    <jhi-user-statistic-charts [userId]="userAccount.id" [userStats]="userStats"></jhi-user-statistic-charts>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+            <div class="d-block">
+
+                <div class="row justify-content-center mb-3">
+                    <div class="col-12">
+                        <div class="card">
+                            <jhi-user-competences-overview [userId]="userAccount.id"></jhi-user-competences-overview>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-12">
+                        <div class="card">
+                            <jhi-user-badges-overview [userId]="userAccount.id"></jhi-user-badges-overview>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

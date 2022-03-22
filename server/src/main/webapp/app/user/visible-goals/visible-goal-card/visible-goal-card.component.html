@@ -1,0 +1,20 @@
+<div class="card my-3 shadow-sm" *ngIf="goal">
+  <div class="card-header font-weight-bold">
+    {{goal.name}}
+  </div>
+  <div class="card-body">
+    <div class="d-flex row justify-content-center ">
+      <div class="col-md-12 col-lg-6 mb-2">
+        <span jhiTranslate="goalProgressCard.description" class="label font-weight-bold">Description:</span>
+        <p class="card-text">{{goal.info}}</p>
+      </div>
+      <div class="col-md-12 col-lg-6 mb-2">
+        <jhi-goal-award-information [goal]="goal"></jhi-goal-award-information>
+        <jhi-goal-requirement-information [goal]="goal"></jhi-goal-requirement-information>
+      </div>
+    </div>
+    <button (click)="subscribeToGoal()" class="btn btn-primary float-right" type="button">
+      <fa-icon icon="plus"></fa-icon>&nbsp;<span>{{'entity.action.add'|translate}}</span>
+    </button>
+  </div>
+</div>

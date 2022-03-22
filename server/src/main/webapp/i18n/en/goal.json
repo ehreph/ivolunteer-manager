@@ -1,0 +1,53 @@
+{
+  "ivolunteerManagerApp": {
+    "goal": {
+      "awardedBadge": "Awarded Badge",
+      "awardedCompetence": "Awarded Competence",
+      "awardedCompetences": "Awarded Competences for finishing Goal",
+      "created": "A new Goal is created with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Goal {{ name }}?"
+      },
+      "deleted": "A Goal is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "Goal"
+      },
+      "goalAward": {
+        "create": "add Reward",
+        "title": "Goal Rewards"
+      },
+      "goalRequirements": {
+        "amount": "Amount",
+        "create": "add Requirements",
+        "displayMeasurement": "Display measurement",
+        "endDate": "End Date",
+        "info": "Information",
+        "instance": "Object",
+        "operator": "calculation operator",
+        "ruleType": "Rule Type",
+        "startDate": "Start Date",
+        "title": "Goal Requirements"
+      },
+      "home": {
+        "createLabel": "Create a new Goal",
+        "createOrEditLabel": "Create or edit a Goal",
+        "createPersonalGoal": "Create personal Goal",
+        "notFound": "No Goals found",
+        "title": "Goals"
+      },
+      "info": "Description",
+      "institution": "Institution",
+      "name": "Name",
+      "neededAmount": "Needed Amount",
+      "requiredCompetences": "Required Competences to start Goal",
+      "requirements": "Requirements",
+      "type": "Type",
+      "updated": "A Goal is updated with identifier {{ param }}",
+      "personalGoal": "Personal Goal",
+      "personalGoal.true": "Yes",
+      "personalGoal.false": "No",
+      "personalGoal.null": "No",
+      "personalGoal.undefined": "No"
+    }
+  }
+}

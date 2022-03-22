@@ -1,0 +1,53 @@
+<form (ngSubmit)="save()" [formGroup]="editForm" name="editForm" novalidate role="form">
+    <div class="modal-header">
+        <h4 id="jhi-user-competence-heading" jhiTranslate="ivolunteerManagerApp.userCompetence.home.createOrEditLabel">
+            Create or edit a User Competence</h4>
+    </div>
+    <div class="modal-body">
+
+        <div>
+            <jhi-alert-error></jhi-alert-error>
+
+            <!--            <div class="form-group" [hidden]="!editForm.get('id')!.value">-->
+            <!--                <label for="id" jhiTranslate="global.field.id">ID</label>-->
+            <!--                <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />-->
+            <!--            </div>-->
+
+            <!--            <div class="form-group">-->
+            <!--                <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.userCompetence.userId" for="field_userId">User Id</label>-->
+            <!--                <input type="number" class="form-control" name="userId" id="field_userId"-->
+            <!--                       formControlName="userId"/>-->
+            <!--            </div>-->
+
+
+            <div class="form-group">
+                <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.userCompetence.comp"
+                       for="field_comp">Comp</label>
+                <select class="form-control" id="field_comp" name="comp" formControlName="compId">
+                    <option [ngValue]="null"></option>
+                    <option [ngValue]="competenceOption.id"
+                            *ngFor="let competenceOption of competences; trackBy: trackById">{{ competenceOption.name }}</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.userCompetence.userLevel"
+                       for="field_userLevel">User Level</label>
+                <input type="number" class="form-control" name="userLevel" id="field_userLevel"
+                       formControlName="userLevel"/>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+        <button (click)="cancel()" class="btn btn-secondary" id="cancel-save" type="button">
+            <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button [disabled]="editForm.invalid || isSaving" class="btn btn-primary" id="save-entity" type="submit">
+            <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+
+</form>

@@ -1,0 +1,11 @@
+<div *ngIf="myGoal.goal.requirements&& myGoal.goal.requirements.length>0">
+    <h5 class="title"><span
+        jhiTranslate="ivolunteerManagerApp.myGoals.requirements"></span>
+    </h5>
+
+    <ul class="list-group">
+        <li *ngFor="let requirement of myGoal.goal.requirements" class="list-group-item">
+            <jhi-requirement-progress [myGoal]="myGoal" [requirement]="requirement" [showRelative]="showRelative" ></jhi-requirement-progress>
+        </li>
+    </ul>
+</div>

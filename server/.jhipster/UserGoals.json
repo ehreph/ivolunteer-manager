@@ -1,0 +1,33 @@
+{
+  "name": "UserGoals",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "currentValue",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "goal",
+      "otherEntityRelationshipName": "userGoals",
+      "relationshipName": "goal",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210315165349",
+  "entityTableName": "user_goals",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

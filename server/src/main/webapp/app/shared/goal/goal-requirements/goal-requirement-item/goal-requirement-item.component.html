@@ -1,0 +1,15 @@
+<form [formGroup]="parentForm">
+    <div formArrayName="requirements">
+        <div class="d-md-flex row list-group-item" [id]="'requirement-rule-'+index" [formGroupName]="index">
+            <formly-form [form]="getFormGroupByIndex()" [fields]="fields" [(model)]="_model" [options]="options"></formly-form>
+            <div class="col mx-auto">
+                <label class="form-control-label"></label>
+                <div class=" mr-auto mr-2 float-right">
+                    <button class="btn btn-danger  m-1" type="button" jhiTranslate="entity.action.remove"
+                            (click)="remove()">Remove
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

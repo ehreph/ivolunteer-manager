@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="autoIncrement" value="true"/>
+    <!--
+        add personal goal changes
+    -->
+    <changeSet id="20210621000000-1" author="ehreph">
+        <addColumn tableName="goal">
+            <column name="is_personal" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by_user_id" type="bigint">
+            </column>
+        </addColumn>
+
+    </changeSet>
+
+    <changeSet id="20210621000000-2" author="ehreph">
+        <addForeignKeyConstraint baseColumnNames="created_by_user_id"
+                                 baseTableName="goal"
+                                 constraintName="fk_goal_created_by_user_id_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+    </changeSet>
+
+</databaseChangeLog>

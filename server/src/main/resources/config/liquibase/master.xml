@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql, mariadb"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql, mariadb"/>
+    <property name="clobType" value="clob" dbms="h2"/>
+    <property name="clobType" value="clob" dbms="mysql, oracle, mssql, mariadb, postgresql"/>
+    <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315164749_added_entity_Institution.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315164849_added_entity_Badge.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315164949_added_entity_UserBadge.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165049_added_entity_Competence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165149_added_entity_UserCompetence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165249_added_entity_GoalAward.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165349_added_entity_UserGoals.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165449_added_entity_Goal.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165549_added_entity_RuleAttribute.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165649_added_entity_GoalRequirements.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20210315164949_added_entity_constraints_UserBadge.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165149_added_entity_constraints_UserCompetence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165249_added_entity_constraints_GoalAward.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165349_added_entity_constraints_UserGoals.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165449_added_entity_constraints_Goal.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210315165649_added_entity_constraints_GoalRequirements.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210514165049_added_entity_Activity.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210515165649_added_activity_columns_to_GoalRequirements.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210523165649_update_user_goal_columns.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210524165049_added_entity_ActivityProgress.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210621000000_update_goal_add_personal_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210705000000_add_date_progress_tracking.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210707000000_add_missing_fk_for_different_entities.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202110295124435_01_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202110296013727_01_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202110296033238_merge_to_base_data.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202110297021051_change_discriminator_type.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202110297033037_add_fk_requirement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202111334023205_remove_display_type_changelog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202201137033037_add_test_data.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+    <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
+</databaseChangeLog>

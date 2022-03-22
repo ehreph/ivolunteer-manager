@@ -1,0 +1,28 @@
+<div class="card my-3 shadow-sm" *ngIf="myGoal">
+  <div class="card-header font-weight-bold">
+    <span class="h4">{{myGoal.goal.name}}</span>
+    <button (click)="removeGoal()" class="btn btn-danger float-right" type="button">
+      <fa-icon [icon]=faTrashAlt></fa-icon>
+    </button>
+  </div>
+
+  <div class="card-body">
+    <div class="d-flex row justify-content-center ">
+      <div class="col-md-12 col-lg-6 mb-2">
+        <span jhiTranslate="goalProgressCard.description" class="label font-weight-bold">Description:</span>
+        <p class="card-text">{{myGoal.goal.info}}</p>
+        <jhi-goal-award-information [goal]="myGoal.goal"></jhi-goal-award-information>
+      </div>
+
+      <div class="col-md-12 col-lg-6 mb-2">
+
+        <jhi-goal-requirements-progress [myGoal]="myGoal"
+                                        [showRelative]="showRelative"></jhi-goal-requirements-progress>
+      </div>
+    </div>
+    <button [disabled]="!goalFinished" (click)="finishGoal()" class="btn btn-success float-right"
+            type="button">
+      <fa-icon [icon]="faCheckCircle"></fa-icon>&nbsp;<span>{{'goalProgressCard.finishGoal'|translate}}</span>
+    </button>
+  </div>
+</div>

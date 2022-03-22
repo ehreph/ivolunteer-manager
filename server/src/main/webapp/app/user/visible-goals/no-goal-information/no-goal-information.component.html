@@ -1,0 +1,25 @@
+<div class="row justify-content-center py-5">
+
+  <div>
+    <div class="row justify-content-center py-2">
+      <fa-icon icon="plus-circle" size="5x" class="primary"></fa-icon>
+
+
+    </div>
+
+    <p class="py-2" jhiTranslate="ivolunteerManagerApp.overview.personalGoalInfo">
+      It seems like we currently have any open goals for you. But you can start by creating your own goals.
+    </p>
+
+    <div class="row justify-content-center">
+      <button type="submit"
+              [routerLink]="['/overview/personal-goal/new']"
+              class="btn btn-primary">
+        <fa-icon icon="running"></fa-icon>
+        <span class="d-md-inline" jhiTranslate="ivolunteerManagerApp.overview.createPersonalGoal">Create personal Goal</span>
+      </button>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,30 @@
+<form [formGroup]="editForm">
+  <div class="card p-3">
+    <div class="mr-1 mb-1 row">
+      <h4 class="col-6" jhiTranslate="ivolunteerManagerApp.goal.goalRequirements.title">Required
+        Rules to finish this Goal</h4>
+      <button type="button"
+              class="btn btn-primary float-right ml-auto"
+              (click)="addRequirement()">
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="ivolunteerManagerApp.goal.goalRequirements.create">
+                               add Requirements
+                                </span>
+      </button>
+    </div>
+    <div class="list-group m-3">
+        <jhi-goal-requirement-item *ngFor="let requirement of requirements.controls; let i=index"
+                                   [parentForm]="editForm"
+                                   [index]="i"
+                                   [formArrayName]="'requirements'"
+                                   [model]="requirement.value"
+                                   [existingBadges]="existingBadges"
+                                   [existingCompetences]="existingCompetences"
+                                   [existingGoals]="existingGoals"
+                                   [existingActivities]="existingActivities"
+                                   (removeClicked)="removeRequirement(i)"></jhi-goal-requirement-item>
+    </div>
+
+
+  </div>
+</form>

@@ -1,0 +1,13 @@
+{
+  "ivolunteerManagerApp": {
+    "RuleOperator": {
+      "AWARDED": "awarded",
+      "BIGGER": ">",
+      "BIGGER_THAN": ">=",
+      "FINISHED": "finished",
+      "LESS": "<",
+      "LESS_THAN": "<=",
+      "null": ""
+    }
+  }
+}

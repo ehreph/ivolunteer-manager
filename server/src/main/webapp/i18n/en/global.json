@@ -1,0 +1,176 @@
+{
+  "entity": {
+    "action": {
+      "add": "Add",
+      "addblob": "Add blob",
+      "addimage": "Add image",
+      "back": "Back",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "deleteGoal": "Delete Goal",
+      "edit": "Edit",
+      "finishGoal": "Finish Goal",
+      "open": "Open",
+      "remove": "Remove",
+      "save": "Save",
+      "view": "View"
+    },
+    "delete": {
+      "title": "Confirm delete operation"
+    },
+    "detail": {
+      "field": "Field",
+      "value": "Value"
+    },
+    "validation": {
+      "datetimelocal": "This field should be a date and time.",
+      "max": "This field cannot be more than {{ max }}.",
+      "maxbytes": "This field cannot be more than {{ max }} bytes.",
+      "maxlength": "This field cannot be longer than {{ max }} characters.",
+      "min": "This field should be at least {{ min }}.",
+      "minbytes": "This field should be at least {{ min }} bytes.",
+      "minlength": "This field is required to be at least {{ min }} characters.",
+      "number": "This field should be a number.",
+      "pattern": "This field should follow pattern for {{ pattern }}.",
+      "patternLogin": "This field can only contain letters, digits and e-mail addresses.",
+      "required": "This field is required."
+    }
+  },
+  "error": {
+    "NotNull": "Field {{ fieldName }} cannot be empty!",
+    "Size": "Field {{ fieldName }} does not meet min/max size requirements!",
+    "emailexists": "Email is already in use!",
+    "file": {
+      "could.not.extract": "Could not extract file",
+      "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
+    },
+    "idexists": "A new {{ entityName }} cannot already have an ID",
+    "idnull": "Invalid ID",
+    "internalServerError": "Internal server error",
+    "server.not.reachable": "Server not reachable",
+    "url.not.found": "Not found",
+    "userexists": "Login name already used!"
+  },
+  "footer": "This is your footer",
+  "global": {
+    "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
+    "field": {
+      "id": "ID"
+    },
+    "form": {
+      "confirmpassword.label": "New password confirmation",
+      "confirmpassword.placeholder": "Confirm the new password",
+      "currentpassword.label": "Current password",
+      "currentpassword.placeholder": "Current password",
+      "email.label": "Email",
+      "email.placeholder": "Your email",
+      "newpassword.label": "New password",
+      "newpassword.placeholder": "New password",
+      "username.label": "Username",
+      "username.placeholder": "Your username"
+    },
+    "item-count": "Showing {{first}} - {{second}} of {{total}} items.",
+    "menu": {
+      "account": {
+        "login": "Sign in",
+        "logout": "Sign out",
+        "main": "Account",
+        "password": "Password",
+        "register": "Register",
+        "sessions": "Sessions",
+        "settings": "Settings"
+      },
+      "activityProgress.title": "Track your Progress",
+      "admin": {
+        "apidocs": "API",
+        "audits": "Audits",
+        "configuration": "Configuration",
+        "database": "Database",
+        "health": "Health",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)",
+        "logs": "Logs",
+        "main": "Administration",
+        "metrics": "Metrics",
+        "tracker": "User tracker",
+        "userManagement": "User management"
+      },
+      "availableGoals": "Available Goals",
+      "entities": {
+        "activity": "Activity",
+        "badge": "Badge",
+        "competence": "Competence",
+        "goal": "Goal",
+        "goalAward": "Goal Award",
+        "goalRequirements": "Goal Requirements",
+        "institution": "Institution",
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "main": "Entities",
+        "ruleAttribute": "Rule Attribute",
+        "userBadge": "User Badge",
+        "userCompetence": "User Competence",
+        "userGoals": "User Goals"
+      },
+      "home": "Home",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "language": "Language",
+      "myGoals": "My Goals",
+      "myGoals.title": "Your Goals",
+      "personalGoal.title": "Personal Goal",
+      "user": {
+        "availableGoals": "Available Goals",
+        "profile": "User Profile",
+        "yourGoals": "Your Goals"
+      },
+      "userProfile": "User Profile",
+      "userStatistics.title": "Profile",
+      "visibleGoals.title": "Available Goals"
+    },
+    "messages": {
+      "error": {
+        "dontmatch": "The password and its confirmation do not match!"
+      },
+      "info": {
+        "authenticated": {
+          "link": "sign in",
+          "prefix": "If you want to ",
+          "suffix": ", you can try the default accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\")."
+        },
+        "register": {
+          "link": "Register a new account",
+          "noaccount": "You don't have an account yet?"
+        }
+      },
+      "validate": {
+        "confirmpassword": {
+          "maxlength": "Your confirmation password cannot be longer than 50 characters.",
+          "minlength": "Your confirmation password is required to be at least 4 characters.",
+          "required": "Your confirmation password is required."
+        },
+        "email": {
+          "invalid": "Your email is invalid.",
+          "maxlength": "Your email cannot be longer than 50 characters.",
+          "minlength": "Your email is required to be at least 5 characters.",
+          "required": "Your email is required."
+        },
+        "newpassword": {
+          "maxlength": "Your password cannot be longer than 50 characters.",
+          "minlength": "Your password is required to be at least 4 characters.",
+          "required": "Your password is required.",
+          "strength": "Password strength:"
+        }
+      }
+    },
+    "ribbon": {
+      "dev": "Development"
+    },
+    "title": "IvolunteerManager"
+  },
+  "measurementPeriod": "Measurement period:",
+  "until": "until",
+  "achieved": "achieved!",
+  "of": "of",
+  "finishingCondition": "Condition:",
+  "userLevel": "(current Level)",
+  "neededLevel": "(needed Level)",
+  "level": "Level"
+}

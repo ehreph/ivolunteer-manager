@@ -1,0 +1,33 @@
+{
+  "name": "UserCompetence",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "userLevel",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "competence",
+      "otherEntityRelationshipName": "userCompetence",
+      "relationshipName": "comp",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210315165149",
+  "entityTableName": "user_competence",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

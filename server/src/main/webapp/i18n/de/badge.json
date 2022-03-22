@@ -1,0 +1,23 @@
+{
+  "ivolunteerManagerApp": {
+    "badge": {
+      "assignedGoals": "Zugewiesene Ziele",
+      "created": "Abzeichen wurde erstellt",
+      "delete": {
+        "question": "Soll das Abzeichen {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Abzeichen wurde gelöscht",
+      "detail": {
+        "title": "Abzeichen"
+      },
+      "home": {
+        "createLabel": "Abzeichen erstellen",
+        "createOrEditLabel": "Abzeichen erstellen oder bearbeiten",
+        "notFound": "keine Abzeichen gefunden",
+        "title": "Abzeichen"
+      },
+      "name": "Name",
+      "updated": "Abzeichen wurde aktualisiert"
+    }
+  }
+}

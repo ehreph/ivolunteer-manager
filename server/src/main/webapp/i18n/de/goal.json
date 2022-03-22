@@ -1,0 +1,53 @@
+{
+  "ivolunteerManagerApp": {
+    "goal": {
+      "awardedBadge": "Abzeichenbelohnungen",
+      "awardedCompetence": "Belohnungen",
+      "awardedCompetences": "Abschlussbelohnungen",
+      "created": "Ziel wurde erstellt",
+      "delete": {
+        "question": "Soll das Ziel {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Ziel wurde gelöscht",
+      "detail": {
+        "title": "Ziel"
+      },
+      "goalAward": {
+        "create": "Belohnung hinzufügen",
+        "title": "Zielbelohungen"
+      },
+      "goalRequirements": {
+        "amount": "Anzahl",
+        "create": "Bedingung hinzufügen",
+        "displayMeasurement": "Anzeigeeinheit",
+        "endDate": "Enddatum",
+        "info": "Information",
+        "instance": "Objekt",
+        "operator": "Operator",
+        "ruleType": "Regeltyp",
+        "startDate": "Startdatum",
+        "title": "Abschlusskriterien"
+      },
+      "home": {
+        "createLabel": "Ziel erstellen",
+        "createOrEditLabel": "Ziel erstellen oder bearbeiten",
+        "createPersonalGoal": "Persönliches Ziel erstellen",
+        "notFound": "keine Ziele gefunden",
+        "title": "Ziele"
+      },
+      "info": "Beschreibung",
+      "institution": "Institution",
+      "name": "Name",
+      "neededAmount": "benötigter Wert",
+      "requiredCompetences": "Abschlusskriterien",
+      "requirements": "Abschlusskriterien",
+      "type": "Typ",
+      "updated": "Ziel wurde aktualisiert",
+      "personalGoal": "Persönliches Ziel",
+      "personalGoal.true": "Ja",
+      "personalGoal.false": "Nein",
+      "personalGoal.null": "Nein",
+      "personalGoal.undefined": "Nein"
+    }
+  }
+}

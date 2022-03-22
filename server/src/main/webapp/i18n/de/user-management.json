@@ -1,0 +1,30 @@
+{
+  "userManagement": {
+    "activated": "Aktiv",
+    "created": "Ein neuer Benutzer wurde mit ID {{ param }} erstellt",
+    "createdBy": "Erstellt von",
+    "createdDate": "Erstellt am",
+    "deactivated": "Deaktiviert",
+    "delete": {
+      "question": "Sind Sie sicher, dass Sie den Benutzer {{ login }} löschen möchten?"
+    },
+    "deleted": "Ein Benutzer mit ID {{ param }} wurde gelöscht",
+    "detail": {
+      "title": "Benutzer"
+    },
+    "email": "Email",
+    "firstName": "Vorname",
+    "home": {
+      "createLabel": "Neuen Benutzer erstellen",
+      "createOrEditLabel": "Benutzer erstellen oder bearbeiten",
+      "title": "Benutzer"
+    },
+    "langKey": "Sprache",
+    "lastModifiedBy": "Bearbeitet von",
+    "lastModifiedDate": "Zuletzt bearbeitet",
+    "lastName": "Nachname",
+    "login": "Login",
+    "profiles": "Rollen",
+    "updated": "Ein Benutzer mit ID {{ param }} wurde geändert"
+  }
+}

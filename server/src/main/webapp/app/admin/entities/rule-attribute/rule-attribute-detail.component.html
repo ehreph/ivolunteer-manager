@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="ruleAttribute">
+            <h2><span jhiTranslate="ivolunteerManagerApp.ruleAttribute.detail.title">Rule Attribute</span> {{ ruleAttribute.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="ivolunteerManagerApp.ruleAttribute.ruleType">Rule Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'ivolunteerManagerApp.GlobalType.' + ruleAttribute.ruleType }}">{{ ruleAttribute.ruleType }}</span>
+                </dd>
+                <dt><span jhiTranslate="ivolunteerManagerApp.ruleAttribute.name">Name</span></dt>
+                <dd>
+                    <span>{{ ruleAttribute.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="ivolunteerManagerApp.ruleAttribute.unitName">Unit Name</span></dt>
+                <dd>
+                    <span>{{ ruleAttribute.unitName }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['../edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

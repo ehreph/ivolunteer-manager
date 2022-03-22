@@ -1,0 +1,23 @@
+{
+  "ivolunteerManagerApp": {
+    "badge": {
+      "assignedGoals": "Assigned Goals",
+      "created": "A new Badge is created with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Badge {{ name }}?"
+      },
+      "deleted": "A Badge is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "Badge"
+      },
+      "home": {
+        "createLabel": "Create a new Badge",
+        "createOrEditLabel": "Create or edit a Badge",
+        "notFound": "No Badges found",
+        "title": "Badges"
+      },
+      "name": "Name",
+      "updated": "A Badge is updated with identifier {{ param }}"
+    }
+  }
+}

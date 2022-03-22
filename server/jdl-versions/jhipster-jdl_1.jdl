@@ -1,0 +1,122 @@
+
+application {
+  config {
+    baseName ivolunteerManager,
+    applicationType monolith,
+    packageName com.ivolunteer,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular,
+    languages [de,en],
+    nativeLanguage de
+  }
+  entities *
+}
+
+entity Institution{
+	name String,
+    description String
+}
+
+entity Badge {
+	name String,
+}
+
+entity UserBadge{
+	userId Long,
+}
+relationship ManyToOne{
+	UserBadge{badge} to Badge
+}
+
+
+entity Competence{
+	name String,
+    maxLevel Double
+}
+
+entity UserCompetence{
+	userId Long,
+    userLevel Double,
+}
+relationship ManyToOne{
+	UserCompetence{comp} to Competence
+}
+
+entity GoalAward{
+	awardType GlobalType,
+    generalId Long,
+    increaseLevel Double
+}
+relationship OneToMany{
+    Goal{awardedCompetence} to GoalAward
+}
+
+
+
+entity UserGoals{
+	userId Long,
+    currentValue Double,
+}
+relationship ManyToOne{
+	UserGoals{goal} to Goal
+}
+
+
+entity Goal {
+	name String,
+    info String
+}
+relationship OneToMany{
+	Institution{institutionGoals} to Goal{institution}
+}
+
+
+enum DisplayType{
+    VALUE,
+    PERCENT
+}
+entity RuleAttribute{
+    ruleType GlobalType,
+    name String,
+    displayType DisplayType,
+    unitName String
+}
+
+enum RuleOperator{
+    BIGGER_THAN,
+    LESS_THAN,
+    BIGGER,
+    LESS,
+    AWARDED,
+    FINISHED
+}
+
+enum GlobalType {
+  GOAL,
+  COMPETENCE,
+  ACTIVITY,
+  BADGE
+}
+
+entity GoalRequirements{
+   type GlobalType,
+   generalId String,
+   operator RuleOperator,
+   value Double
+}
+
+relationship OneToMany{
+    Goal{requirements} to GoalRequirements
+}
+relationship ManyToOne{
+	GoalRequirements{attributes} to RuleAttribute
+}
+
+
+
+dto all with mapstruct
+paginate all with pagination
+service all with serviceImpl
+
+

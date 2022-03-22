@@ -1,0 +1,26 @@
+<ul class="navbar-nav" *jhiHasAnyAuthority="'ROLE_USER'">
+  <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" routerLink="/overview" (click)="collapseNavbar()">
+                    <span>
+                        <fa-icon icon="bullseye"></fa-icon>
+                        <span jhiTranslate="global.menu.user.availableGoals">Available Goals</span>
+                    </span>
+    </a>
+  </li>
+  <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" routerLink="/overview/my-goals" (click)="collapseNavbar()">
+                    <span>
+                        <fa-icon icon="list-alt"></fa-icon>
+                        <span jhiTranslate="global.menu.user.yourGoals">My Goals</span>
+                    </span>
+    </a>
+  </li>
+  <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a class="nav-link" routerLink="/overview/statistics" (click)="collapseNavbar()">
+                    <span>
+                         <fa-icon icon="chart-pie"></fa-icon>
+                        <span jhiTranslate="global.menu.user.profile">User Profile</span>
+                    </span>
+    </a>
+  </li>
+</ul>

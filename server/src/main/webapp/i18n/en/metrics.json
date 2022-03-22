@@ -1,0 +1,102 @@
+{
+  "metrics": {
+    "cache": {
+      "averageGetTime": "Average get time (µs)",
+      "averagePutTime": "Average put time (µs)",
+      "averageRemoveTime": "Average remove time (µs)",
+      "cachename": "Cache name",
+      "evictions": "Cache Evictions",
+      "gets": "Cache Gets",
+      "hitPercent": "Cache Hit %",
+      "hits": "Cache Hits",
+      "missPercent": "Cache Miss %",
+      "misses": "Cache Misses",
+      "puts": "Cache Puts",
+      "removals": "Cache Removals",
+      "title": "Cache statistics"
+    },
+    "datasource": {
+      "count": "Count",
+      "max": "Max",
+      "mean": "Mean",
+      "min": "Min",
+      "name": "Pool usage",
+      "p50": "p50",
+      "p75": "p75",
+      "p95": "p95",
+      "p99": "p99",
+      "title": "DataSource statistics (time in millisecond)",
+      "usage": "Connection Pool Usage"
+    },
+    "jvm": {
+      "gc": {
+        "marksweepcount": "Mark Sweep count",
+        "marksweeptime": "Mark Sweep time",
+        "scavengecount": "Scavenge count",
+        "scavengetime": "Scavenge time",
+        "title": "Garbage collections"
+      },
+      "http": {
+        "active": "Active requests:",
+        "code": {
+          "notfound": "Not found",
+          "ok": "Ok",
+          "servererror": "Server Error"
+        },
+        "table": {
+          "average": "Average",
+          "code": "Code",
+          "count": "Count",
+          "max": "Max",
+          "mean": "Mean"
+        },
+        "title": "HTTP requests (time in millisecond)",
+        "total": "Total requests:"
+      },
+      "memory": {
+        "heap": "Heap Memory",
+        "nonheap": "Non-Heap Memory",
+        "title": "Memory",
+        "total": "Total Memory"
+      },
+      "threads": {
+        "all": "All",
+        "blocked": "Blocked",
+        "dump": {
+          "blockedcount": "Blocked Count",
+          "blockedtime": "Blocked Time",
+          "hide": "Hide Stacktrace",
+          "id": "Id: ",
+          "lockname": "Lock name",
+          "show": "Show Stacktrace",
+          "stacktrace": "Stacktrace",
+          "title": "Threads dump",
+          "waitedcount": "Waited Count",
+          "waitedtime": "Waited Time"
+        },
+        "runnable": "Runnable",
+        "timedwaiting": "Timed waiting",
+        "title": "Threads",
+        "waiting": "Waiting"
+      },
+      "title": "JVM Metrics"
+    },
+    "refresh.button": "Refresh",
+    "servicesstats": {
+      "table": {
+        "count": "Count",
+        "max": "Max",
+        "mean": "Mean",
+        "min": "Min",
+        "name": "Service name",
+        "p50": "p50",
+        "p75": "p75",
+        "p95": "p95",
+        "p99": "p99"
+      },
+      "title": "Services statistics (time in millisecond)"
+    },
+    "title": "Application Metrics",
+    "updating": "Updating..."
+  }
+}

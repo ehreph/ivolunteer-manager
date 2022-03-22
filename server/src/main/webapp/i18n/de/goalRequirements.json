@@ -1,0 +1,30 @@
+{
+  "ivolunteerManagerApp": {
+    "goalRequirements": {
+      "attributes": "Attribute",
+      "created": "Ein neues Zielkriterium wurde mit der ID {{ param }} erstellt",
+      "delete": {
+        "question": "Möchtest du das Zielkriterium mit der ID {{ id }} wirklich löschen?"
+      },
+      "deleted": "Das Zielkriterium mit der ID {{ param }} wurde gelöscht",
+      "detail": {
+        "title": "Abschlussbedingung"
+      },
+      "displayMeasurement": "Einheit",
+      "generalId": "Allgemeine ID",
+      "goal": "Ziel",
+      "home": {
+        "createLabel": "Abschlussbedingung erstellen",
+        "createOrEditLabel": "Abschlussbedingung erstellen oder bearbeiten",
+        "notFound": "Keine Abschlussbedingungen gefunden",
+        "title": "Abschlussbedingungen"
+      },
+      "instance": "Object",
+      "operator": "Operator",
+      "ruleType": "Regeltyp",
+      "type": "Kategorie",
+      "updated": "Das Zielkriterium mit der ID {{ param }} wurde aktualisiert",
+      "value": "Wert"
+    }
+  }
+}

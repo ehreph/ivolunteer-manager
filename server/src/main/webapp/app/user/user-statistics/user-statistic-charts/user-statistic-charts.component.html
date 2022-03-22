@@ -1,0 +1,45 @@
+<div *ngIf="userStats">
+    <p>
+        <span class="h3" jhiTranslate="profile.yourActivities">Deine Aktivitäten und Statistiken</span>
+    </p>
+    <div class="row justify-content-center mb-3">
+        <div class="input-group p-3">
+            <div class="input-group-prepend d-none d-sm-block">
+                <label class="form-control-label input-group-text" jhiTranslate="profile.compareToUser">Compare to
+                    User</label>
+            </div>
+            <select class="form-control" id="compareUserId" [(ngModel)]="compareUserId" (ngModelChange)="loadCompareUserStats()">
+              <option *ngFor="let u of users" [ngValue]="u.id">{{u.firstName +" "+u.lastName}}</option>
+            </select>
+        </div>
+    </div>
+    <ul ngbNav #nav="ngbNav" [activeId]="active" class="nav-tabs">
+        <li [ngbNavItem]="1">
+            <a ngbNavLink jhiTranslate="profile.finishedGoalsPerMonth">Ziele pro Monat</a>
+            <ng-template ngbNavContent>
+                <jhi-basic-bar-chart [timeUnit]="'month'"
+                                     [barChartLabels]="finishedGoalsPerMonthLabels"
+                                     [barChartData]="finishedGoalsPerMonthValues"></jhi-basic-bar-chart>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+            <a ngbNavLink jhiTranslate="profile.finishedGoalsPerDay">Ziele pro Tag</a>
+            <ng-template ngbNavContent>
+                <jhi-basic-bar-chart
+                    [timeUnit]="'day'"
+                    [barChartLabels]="finishedGoalsPerDayLabels"
+                    [barChartData]="finishedGoalsPerDayValues"></jhi-basic-bar-chart>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+            <a ngbNavLink jhiTranslate="profile.yourCompetences">Deine Kompetenzen</a>
+            <ng-template ngbNavContent>
+                <jhi-basic-radar-chart
+                    [radarChartLabels]="levelPerCompetenceLabels"
+                    [radarChartData]="levelPerCompetenceValues"></jhi-basic-radar-chart>
+            </ng-template>
+        </li>
+    </ul>
+
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>

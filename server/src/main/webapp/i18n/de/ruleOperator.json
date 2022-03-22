@@ -1,0 +1,13 @@
+{
+  "ivolunteerManagerApp": {
+    "RuleOperator": {
+      "AWARDED": "verliehen",
+      "BIGGER": ">",
+      "BIGGER_THAN": ">=",
+      "FINISHED": "abgeschlossen",
+      "LESS": "<",
+      "LESS_THAN": "<=",
+      "null": ""
+    }
+  }
+}

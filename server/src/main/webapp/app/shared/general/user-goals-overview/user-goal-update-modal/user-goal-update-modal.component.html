@@ -1,0 +1,50 @@
+<form (ngSubmit)="save()" [formGroup]="editForm" name="editForm" novalidate role="form">
+    <div class="modal-header">
+        <h4 id="jhi-user-competence-heading" jhiTranslate="ivolunteerManagerApp.userGoals.home.createOrEditLabel">Create
+            or edit a User Goals</h4>
+    </div>
+    <div class="modal-body">
+
+        <div>
+            <jhi-alert-error></jhi-alert-error>
+
+            <!--            <div class="form-group" [hidden]="!editForm.get('id')!.value">-->
+            <!--                <label for="id" jhiTranslate="global.field.id">ID</label>-->
+            <!--                <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />-->
+            <!--            </div>-->
+
+<!--            <div class="form-group">-->
+<!--                <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.userGoals.userId"-->
+<!--                       for="field_userId">User Id</label>-->
+<!--                <input type="number" class="form-control" name="userId" id="field_userId"-->
+<!--                       formControlName="userId"/>-->
+<!--            </div>-->
+
+<!--            <div class="form-group">-->
+<!--                <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.userGoals.finished"-->
+<!--                       for="field_finished">Current Value</label>-->
+<!--                <input type="checkbox" class="form-control" name="finished" id="field_finished"-->
+<!--                       formControlName="finished"/>-->
+<!--            </div>-->
+
+            <div class="form-group">
+                <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.userGoals.goal" for="field_goal">Goal</label>
+                <select class="form-control" id="field_goal" name="goal" formControlName="goalId">
+                    <option [ngValue]="null"></option>
+                    <option [ngValue]="goalOption.id"
+                            *ngFor="let goalOption of goals; trackBy: trackById">{{ goalOption.name }}</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button (click)="cancel()" class="btn btn-secondary" id="cancel-save" type="button">
+            <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button [disabled]="editForm.invalid || isSaving" class="btn btn-primary" id="save-entity" type="submit">
+            <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

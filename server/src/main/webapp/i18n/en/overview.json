@@ -1,0 +1,40 @@
+{
+  "ivolunteerManagerApp": {
+    "overview": {
+      "IssuedByCompany": "Issued By",
+      "activityInfo": "The activity {{param}} requires you to achieve <strong>{{ param2 }} {{ param3 }}</strong> between <strong>{{dateFrom}} - {{ dateTo }}</strong>",
+      "added": "The Goal {{ param }} was added to your list",
+      "awardedBadge": "Awarded Badge",
+      "completeCompetence": "The competence {{comp}} needs to be {{operator}} than {{value}}",
+      "completeGoal": "You need to complete the following goal:",
+      "createPersonalGoal": "Create personal Goal",
+      "detail": {
+        "title": "Goal"
+      },
+      "goalAward": {
+        "rewards": "Rewards for completing the goal"
+      },
+      "goalRequirements": {
+        "amount": "Amount",
+        "displayMeasurement": "Display measurement",
+        "info": "Required Rules to finish this Goal",
+        "instance": "Object",
+        "operator": "calculation operator",
+        "ruleType": "Rule Type"
+      },
+      "hideRequirements": "Hide Requirements",
+      "home": {
+        "notFound": "Currently no Goals available",
+        "title": "Available Goals"
+      },
+      "increaseLevel": "Your level of the Competence {{param}} will be increased by <strong>{{param2}}</strong>",
+      "institution": "Institution",
+      "needBadge": "You need to have the following badge:",
+      "personalGoalInfo": "It seems like we currently don't have any goals for you. But you can start by creating your own goals.",
+      "receiveBadge": "You will be awared the following badge:",
+      "remove": "The Goal {{ param }} was removed from your list",
+      "requirements": "Requirements",
+      "showRequirements": "Show Requirements"
+    }
+  }
+}

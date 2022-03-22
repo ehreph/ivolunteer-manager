@@ -1,0 +1,23 @@
+{
+  "ivolunteerManagerApp": {
+    "competence": {
+      "created": "Kompetenz wurde erstellt",
+      "delete": {
+        "question": "Soll die Kompetenz {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Kompetenz wurde gelöscht",
+      "detail": {
+        "title": "Kompetenz"
+      },
+      "home": {
+        "createLabel": "Kompetenz erstellen",
+        "createOrEditLabel": "Kompetenz erstellen oder bearbeiten",
+        "notFound": "keine Kompetenzen gefunden",
+        "title": "Kompetenzen"
+      },
+      "maxLevel": "Maximales Level",
+      "name": "Name",
+      "updated": "Kompetenz wurde aktualisiert"
+    }
+  }
+}

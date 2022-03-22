@@ -1,0 +1,50 @@
+{
+  "name": "GoalRequirements",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "GlobalType",
+      "fieldValues": "GOAL,COMPETENCE,ACTIVITY,BADGE"
+    },
+    {
+      "fieldName": "generalId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "operator",
+      "fieldType": "RuleOperator",
+      "fieldValues": "BIGGER_THAN,LESS_THAN,BIGGER,LESS,AWARDED,FINISHED"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "ruleAttribute",
+      "otherEntityRelationshipName": "goalRequirements",
+      "relationshipName": "attributes",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "goal",
+      "otherEntityRelationshipName": "requirements",
+      "relationshipName": "goal",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210315165649",
+  "entityTableName": "goal_requirements",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

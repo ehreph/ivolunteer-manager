@@ -1,0 +1,46 @@
+{
+  "ivolunteerManagerApp": {
+    "myGoals": {
+      "IssuedByCompany": "Erstellt von",
+      "activityInfo": "Um die Aktivität {{param}} abzuschließen musst du <strong>{{ param2 }} {{ param3 }}</strong> innerhalb <strong>{{dateFrom}} - {{ dateTo }}</strong>",
+      "added": "Das Ziel {{ param }} wurde zu deiner Liste hinzugefügt",
+      "awardedBadge": "Abzeichenbelohungen",
+      "completeCompetence": "Dein Level für die Kompetenz {{comp}} muss {{operator}} als {{value}} sein.",
+      "completeGoal": "Dieses Ziel musst du zuerst abschließen:",
+      "createPersonalGoal": "Persönliches Ziel erstellen",
+      "detail": {
+        "title": "Ziel"
+      },
+      "goalAward": {
+        "rewards": "Abschlussbelohnungen"
+      },
+      "goalRequirements": {
+        "amount": "Anzahl",
+        "displayMeasurement": "Anzeigeeinheit",
+        "info": "Abschlusskriterien",
+        "instance": "Objekt",
+        "operator": "Operator",
+        "ruleType": "Regeltyp"
+      },
+      "hideAwards": "Belohnungen verstecken",
+      "hideRequirements": "Kriterien verstecken",
+      "home": {
+        "notFound": "Du hast aktuell keine Ziele ausgewählt",
+        "title": "Deine Ziele"
+      },
+      "increaseLevel": "Dein Kompetenzlevel für {{param}} wird um <strong>{{param2}}</strong> erhöht",
+      "institution": "Institution",
+      "needBadge": "Du musst das folgende Abzeichen besitzen:",
+      "noGoalsFound": "Du hast aktuell keine Ziele ausgewählt",
+      "personalGoalInfo": "Aktuell sind wohl keine Ziele mehr verfügbar :( Du kannst dir Hier aber eigene Ziele erstellen:",
+      "receiveBadge": "Du bekommst das folgenden Abzeichen:",
+      "remove": "Das Ziel {{ param }} wurde von deiner Liste entfernt",
+      "requirements": "Abschlusskriterien",
+      "showAbsolute": "Absolute Werte anzeigen",
+      "showAwards": "Belohnungen anzeigen",
+      "showRelative": "Relative Werte anzeigen",
+      "showRequirements": "Kriterien anzeigen",
+      "trackActivityProgress": "Aktivitätsfortschritt hinzufügen"
+    }
+  }
+}

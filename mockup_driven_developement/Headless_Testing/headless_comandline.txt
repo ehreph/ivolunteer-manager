@@ -1,0 +1,4 @@
+"C:\Users\Admin\AppData\Local\Google\Chrome SxS\Application\chrome.exe" --headless --disable-gpu --enable-logging --dump-dom https://ivolunteer-manager.herokuapp.com/overview/statistics/ > C:\Users\Admin\Desktop\Uniprojekt\informationsystems-project\002_Headless_Tools\response.txt
+
+
+"C:\Users\Admin\AppData\Local\Google\Chrome SxS\Application\chrome.exe" --headless --disable-gpu --enable-logging --window-size=1000,2000 --screenshot=C:\Users\Admin\Desktop\Uniprojekt\informationsystems-project\002_Headless_Tools\headless_screenshot.png https://ivolunteer-manager.herokuapp.com/overview/statistics/

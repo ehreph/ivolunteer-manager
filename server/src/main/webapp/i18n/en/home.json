@@ -1,0 +1,19 @@
+{
+  "home": {
+    "github": "GitHub",
+    "like": "If you like JHipster, don't forget to give us a star on",
+    "link": {
+      "bugtracker": "JHipster bug tracker",
+      "chat": "JHipster public chat room",
+      "follow": "follow @jhipster on Twitter",
+      "homepage": "JHipster homepage",
+      "stackoverflow": "JHipster on Stack Overflow"
+    },
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    },
+    "question": "If you have any question on JHipster:",
+    "subtitle": "IVolunteer Manager is a prototype software that give us the possibility to track different kinds abilities, goals or qualifications of People on various volunteering and humanitarian projects. People volunteering are able to find the place they are most suitable for, and can track personal goals or qualifications they want to achieve.",
+    "title": "Welcome to IVolunteer!"
+  }
+}

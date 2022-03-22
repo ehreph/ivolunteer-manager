@@ -1,0 +1,35 @@
+{
+  "name": "RuleAttribute",
+  "fields": [
+    {
+      "fieldName": "ruleType",
+      "fieldType": "GlobalType",
+      "fieldValues": "GOAL,COMPETENCE,ACTIVITY,BADGE"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "displayType",
+      "fieldType": "DisplayType",
+      "fieldValues": "VALUE,PERCENT"
+    },
+    {
+      "fieldName": "unitName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210315165549",
+  "entityTableName": "rule_attribute",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

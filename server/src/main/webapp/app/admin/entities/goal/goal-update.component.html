@@ -1,0 +1,65 @@
+<div class="row justify-content-center pb-4">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-goal-heading" jhiTranslate="ivolunteerManagerApp.goal.home.createOrEditLabel">Create or edit a
+        Goal</h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.goal.institution"
+                 for="field_institution">Institution</label>
+          <select class="form-control" id="field_institution" name="institution"
+                  formControlName="institutionId">
+            <option [ngValue]="null"></option>
+            <option [ngValue]="institutionOption.id"
+                    *ngFor="let institutionOption of institutions; trackBy: trackById">{{ institutionOption.name }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.goal.name" for="field_name">Name</label>
+          <input type="text" class="form-control" name="name" id="field_name"
+                 formControlName="name"/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.goal.info" for="field_info">Info</label>
+          <textarea class="form-control" name="info" id="field_info"
+                    formControlName="info" style="height: 100px"> </textarea>
+        </div>
+
+
+        <div *ngIf="editForm && isInitComplete" class="my-3">
+          <jhi-goal-awards
+            [editForm]="editForm"
+            [existingBadges]="existingBadges"
+            [existingCompetences]="existingCompetences">
+          </jhi-goal-awards>
+        </div>
+
+        <div *ngIf="editForm && isInitComplete" class="my-3">
+          <jhi-goal-requirements
+            [editForm]="editForm"
+            [existingBadges]="existingBadges"
+            [existingCompetences]="existingCompetences"
+            [existingGoals]="existingGoals"
+            [existingActivities]="existingActivities">
+          </jhi-goal-requirements>
+
+        </div>
+
+        <div>
+          <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+            <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+          </button>
+
+          <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving"
+                  class="btn btn-primary">
+            <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

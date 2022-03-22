@@ -1,0 +1,23 @@
+{
+  "ivolunteerManagerApp": {
+    "userBadge": {
+      "badge": "Abzeichen",
+      "created": "Benutzerabzeichen wurde erstellt",
+      "delete": {
+        "question": "Soll das Benutzerabzeichen {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Benutzerabzeichen wurde gelöscht",
+      "detail": {
+        "title": "Benutzerabzeichen"
+      },
+      "home": {
+        "createLabel": "Benutzerabzeichen erstellen",
+        "createOrEditLabel": "Benutzerabzeichen erstellen oder bearbeiten",
+        "notFound": "keine Abzeichen gefunden",
+        "title": "Benutzerabzeichen"
+      },
+      "updated": "Benutzerabzeichen wurde aktualisiert",
+      "userId": "Benutzer ID"
+    }
+  }
+}

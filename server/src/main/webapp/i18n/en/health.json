@@ -1,0 +1,29 @@
+{
+  "health": {
+    "details": {
+      "details": "Details",
+      "error": "Error",
+      "name": "Name",
+      "properties": "Properties",
+      "value": "Value"
+    },
+    "indicator": {
+      "db": "Database",
+      "diskSpace": "Disk space",
+      "mail": "Email",
+      "ping": "Application"
+    },
+    "refresh.button": "Refresh",
+    "stacktrace": "Stacktrace",
+    "status": {
+      "DOWN": "DOWN",
+      "UNKNOWN": "UNKNOWN",
+      "UP": "UP"
+    },
+    "table": {
+      "service": "Service name",
+      "status": "Status"
+    },
+    "title": "Health Checks"
+  }
+}

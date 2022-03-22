@@ -1,0 +1,23 @@
+{
+  "ivolunteerManagerApp": {
+    "competence": {
+      "created": "A new Competence is created with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Competence {{ name }}?"
+      },
+      "deleted": "A Competence is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "Competence"
+      },
+      "home": {
+        "createLabel": "Create a new Competence",
+        "createOrEditLabel": "Create or edit a Competence",
+        "notFound": "No Competences found",
+        "title": "Competences"
+      },
+      "maxLevel": "Max Level",
+      "name": "Name",
+      "updated": "A Competence is updated with identifier {{ param }}"
+    }
+  }
+}

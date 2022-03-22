@@ -1,0 +1,24 @@
+{
+  "ivolunteerManagerApp": {
+    "userCompetence": {
+      "comp": "Competence",
+      "created": "A new User Competence is created with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete the User Competence {{ name }}?"
+      },
+      "deleted": "A User Competence is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "User Competence"
+      },
+      "home": {
+        "createLabel": "Create a new User Competence",
+        "createOrEditLabel": "Create or edit a User Competence",
+        "notFound": "No Competences found",
+        "title": "Competences"
+      },
+      "updated": "A User Competence is updated with identifier {{ param }}",
+      "userId": "User Id",
+      "userLevel": "Competence Level"
+    }
+  }
+}

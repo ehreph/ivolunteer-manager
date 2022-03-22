@@ -1,0 +1,105 @@
+<div>
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+  <div class="card">
+    <div class="card-header">
+      <h2 id="page-heading">
+        <fa-icon icon="bullseye"></fa-icon>
+        <span jhiTranslate="ivolunteerManagerApp.goal.home.title">Goals</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-goal"
+                [routerLink]="['./new']">
+          <fa-icon icon="plus"></fa-icon>
+          <span jhiTranslate="ivolunteerManagerApp.goal.home.createLabel">
+            Create a new Goal
+            </span>
+        </button>
+      </h2>
+    </div>
+
+
+    <div class="alert alert-warning" id="no-result" *ngIf="goals?.length === 0">
+      <span jhiTranslate="ivolunteerManagerApp.goal.home.notFound">No goals found</span>
+    </div>
+    <div class="card-body" *ngIf="goals && goals.length > 0">
+
+      <div class="table-responsive" id="entities">
+        <table class="table table-striped" aria-describedby="page-heading">
+          <thead>
+          <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
+            <th scope="col" jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col" jhiSortBy="name"><span jhiTranslate="ivolunteerManagerApp.goal.name">Name</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col" jhiSortBy="info"><span jhiTranslate="ivolunteerManagerApp.goal.info">Info</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col" jhiSortBy="institutionName"><span
+              jhiTranslate="ivolunteerManagerApp.goal.institution">Institution</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col" jhiSortBy="isPersonal"><span
+              jhiTranslate="ivolunteerManagerApp.goal.personalGoal">Persönliches Ziel</span>
+              <fa-icon icon="sort"></fa-icon>
+            </th>
+            <th scope="col"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let goal of goals ;trackBy: trackId">
+            <td><a [routerLink]="['../goal', goal.id, 'view']">{{ goal.id }}</a></td>
+            <td>{{ goal.name }}</td>
+            <td>{{ goal.info }}</td>
+            <td>
+              <div *ngIf="goal.institutionId">
+                <a [routerLink]="['../institution', goal.institutionId , 'view']">{{ goal.institutionName }}</a>
+              </div>
+            </td>
+            <td>
+              <span [jhiTranslate]="'ivolunteerManagerApp.goal.personalGoal.'+ goal.isPersonal"></span>
+            </td>
+            <td class="text-right">
+              <div class="btn-group">
+                <button type="submit"
+                        [routerLink]="['./', goal.id, 'view']"
+                        class="btn btn-info btn-sm">
+                  <fa-icon icon="eye"></fa-icon>
+                  <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                </button>
+
+                <button type="submit"
+                        [routerLink]="['./', goal.id, 'edit']"
+                        class="btn btn-primary btn-sm">
+                  <fa-icon icon="pencil-alt"></fa-icon>
+                  <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                </button>
+
+                <button type="submit" (click)="delete(goal)"
+                        class="btn btn-danger btn-sm">
+                  <fa-icon icon="times"></fa-icon>
+                  <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div *ngIf="goals && goals.length > 0">
+        <div class="row justify-content-center">
+          <jhi-item-count [page]="page" [total]="totalItems" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+
+        <div class="row justify-content-center">
+          <ngb-pagination [collectionSize]="totalItems" [(page)]="ngbPaginationPage" [pageSize]="itemsPerPage"
+                          [maxSize]="5" [rotate]="true" [boundaryLinks]="true"
+                          (pageChange)="loadPage($event)"></ngb-pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

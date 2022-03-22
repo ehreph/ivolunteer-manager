@@ -1,0 +1,25 @@
+{
+  "ivolunteerManagerApp": {
+    "ruleAttribute": {
+      "created": "Regelattribut wurde erstellt",
+      "delete": {
+        "question": "Soll das Regelattribut {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Regelattribut wurde gelöscht",
+      "detail": {
+        "title": "Regelattribut"
+      },
+      "displayType": "Anzeigetyp",
+      "home": {
+        "createLabel": "Regelattribut erstellen",
+        "createOrEditLabel": "Regelattribut erstellen oder bearbeiten",
+        "notFound": "Keine Regelattribute gefunden",
+        "title": "Regelattribute"
+      },
+      "name": "Name",
+      "ruleType": "Kategorie",
+      "unitName": "Einheitsname",
+      "updated": "Regelattribut wurde aktualisiert"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="main">
+  <jhi-navbar [(opened)]="_opened" name="navbar"></jhi-navbar>
+
+  <ng-sidebar-container>
+    <ng-sidebar [(opened)]="_opened"
+                [closeOnClickOutside]="true" [mode]="'over'"
+                [autoFocus]="false">
+      <div [ngSwitch]="isAuthenticated()" [ngbCollapse]="!_opened" id="sidebar">
+        <ul class="navbar-nav">
+          <li jhi-side-bar-item class="nav-item p-1" *ngFor="let i of items" [item]="i" (click)="_closeSidebar()">
+        </ul>
+      </div>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+      <div class="container-fluid pt-4 ">
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+  </ng-sidebar-container>
+  <jhi-footer class="d-inline-block d-md-none" name="footer"></jhi-footer>
+</div>

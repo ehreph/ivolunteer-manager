@@ -1,0 +1,28 @@
+{
+  "ivolunteerManagerApp": {
+    "userGoals": {
+      "created": "Benutzerziel wurde erstellt",
+      "currentValue": "Aktueller Wert",
+      "delete": {
+        "question": "Soll das Ziel {{ name }} wirklich dauerhaft für den Benutzer gelöscht werden?"
+      },
+      "deleted": "Benutzerziel wurde gelöscht",
+      "detail": {
+        "title": "User Goals"
+      },
+      "finished": "Abgeschlossen",
+      "finished.false": "Offen",
+      "finished.null": "Offen",
+      "finished.true": "Abgeschlossen",
+      "goal": "Ziel",
+      "home": {
+        "createLabel": "Benutzerziel erstellen",
+        "createOrEditLabel": "Benutzerziel erstellen oder bearbeiten",
+        "notFound": "Keine Ziel gefunden",
+        "title": "Benutzerziele"
+      },
+      "updated": "Benutzerziel wurde aktualisiert",
+      "userId": "Benutzer ID "
+    }
+  }
+}

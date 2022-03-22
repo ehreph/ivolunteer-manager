@@ -1,0 +1,32 @@
+{
+  "name": "Institution",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "goal",
+      "otherEntityRelationshipName": "institution",
+      "relationshipName": "institutionGoals"
+    }
+  ],
+  "changelogDate": "20210315164749",
+  "entityTableName": "institution",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

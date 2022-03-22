@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd"
+    objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1634995958547-2" author="philipp">
+        <addColumn tableName="base_data">
+            <column name="base_type" type="INT"/>
+            <column name="info" type="TEXT"/>
+            <column name="attributes_id" type="BIGINT"/>
+            <column name="created_by_user_id" type="BIGINT"/>
+            <column name="institution_id" type="BIGINT"/>
+            <column name="is_personal" type="BOOLEAN"/>
+            <column name="max_level" type="DOUBLE"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="1634995958547-3" author="philipp">
+        <update tableName="base_data">
+            <column name="base_type" value="base_data"/>
+            <where>base_type is null</where>
+        </update>
+    </changeSet>
+    <changeSet id="1634995958547-11" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="activity_id" baseTableName="activity_progress"
+                                 constraintName="FK_ACTIVITY_PROGRESS_ON_ACTIVITY" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1634995958547-12" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="attributes_id" baseTableName="base_data"
+                                 constraintName="FK_BASE_DATA_ON_ATTRIBUTES" referencedColumnNames="id"
+                                 referencedTableName="rule_attribute"/>
+    </changeSet>
+    <changeSet id="1634995958547-13" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="created_by_user_id" baseTableName="base_data"
+                                 constraintName="FK_BASE_DATA_ON_CREATED_BY_USER" referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+    </changeSet>
+    <changeSet id="1634995958547-14" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="institution_id" baseTableName="base_data"
+                                 constraintName="FK_BASE_DATA_ON_INSTITUTION" referencedColumnNames="id"
+                                 referencedTableName="institution"/>
+    </changeSet>
+    <changeSet id="1634995958547-15" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="competence_id" baseTableName="competence_progress"
+                                 constraintName="FK_COMPETENCE_PROGRESS_ON_COMPETENCE" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1634995958547-16" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="goal_id" baseTableName="goal_award"
+                                 constraintName="FK_GOAL_AWARD_ON_GOAL" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1634995958547-17" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="goal_id" baseTableName="goal_requirements"
+                                 constraintName="FK_GOAL_REQUIREMENTS_ON_GOAL" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1634995958547-18" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="badge_id" baseTableName="user_badge"
+                                 constraintName="FK_USER_BADGE_ON_BADGE" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1634995958547-19" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="comp_id" baseTableName="user_competence"
+                                 constraintName="FK_USER_COMPETENCE_ON_COMP" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1634995958547-20" author="philipp">
+        <addForeignKeyConstraint baseColumnNames="goal_id" baseTableName="user_goals"
+                                 constraintName="FK_USER_GOALS_ON_GOAL" referencedColumnNames="id"
+                                 referencedTableName="base_data"/>
+    </changeSet>
+    <changeSet id="1634995958547-21" author="philipp">
+        <dropForeignKeyConstraint baseTableName="activity" constraintName="fk_activity_attributes_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-22" author="philipp">
+        <dropForeignKeyConstraint baseTableName="activity_progress" constraintName="fk_activity_progress_activity_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-23" author="philipp">
+        <dropForeignKeyConstraint baseTableName="competence_progress"
+                                  constraintName="fk_competence_progress_competence_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-24" author="philipp">
+        <dropForeignKeyConstraint baseTableName="goal_award" constraintName="fk_goal_award_goal_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-25" author="philipp">
+        <dropForeignKeyConstraint baseTableName="goal" constraintName="fk_goal_created_by_user_id_user_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-26" author="philipp">
+        <dropForeignKeyConstraint baseTableName="goal" constraintName="fk_goal_institution_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-27" author="philipp">
+        <dropForeignKeyConstraint baseTableName="goal_requirements" constraintName="fk_goal_requirements_goal_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-28" author="philipp">
+        <dropForeignKeyConstraint baseTableName="user_badge" constraintName="fk_user_badge_badge_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-29" author="philipp">
+        <dropForeignKeyConstraint baseTableName="user_competence" constraintName="fk_user_competence_comp_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-30" author="philipp">
+        <dropForeignKeyConstraint baseTableName="user_goals" constraintName="fk_user_goals_goal_id"/>
+    </changeSet>
+    <changeSet id="1634995958547-31" author="philipp">
+        <dropTable cascadeConstraints="true" tableName="activity"/>
+    </changeSet>
+    <changeSet id="1634995958547-32" author="philipp">
+        <dropTable cascadeConstraints="true" tableName="badge"/>
+    </changeSet>
+    <changeSet id="1634995958547-33" author="philipp">
+        <dropTable cascadeConstraints="true" tableName="competence"/>
+    </changeSet>
+    <changeSet id="1634995958547-34" author="philipp">
+        <dropTable cascadeConstraints="true" tableName="goal"/>
+    </changeSet>
+    <changeSet id="1634995958547-1" author="philipp">
+        <addNotNullConstraint columnDataType="VARCHAR(255)" columnName="principal"
+                              tableName="jhi_persistent_audit_event" validate="true"/>
+    </changeSet>
+
+</databaseChangeLog>

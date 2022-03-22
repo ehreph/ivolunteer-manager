@@ -1,0 +1,20 @@
+{
+  "profile": {
+    "compare": "compare",
+    "compareToUser": "Compare to User",
+
+    "finishedGoalsPerDay": "Completed Goals per Day",
+    "finishedGoalsPerMonth": "Completed Goals per Month",
+    "home": {
+      "title": "User Profile"
+    },
+    "item": {
+      "finishedGoals": "Completed Goals",
+      "goals": "Goals",
+      "openGoals": "Open Goals"
+    },
+    "yourActivities": "Your Activities and Statistics",
+    "yourCompetences": "Your Competences",
+    "yourProgress": "Your Progress"
+  }
+}

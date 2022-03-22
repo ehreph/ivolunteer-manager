@@ -1,0 +1,24 @@
+{
+  "ivolunteerManagerApp": {
+    "userCompetence": {
+      "comp": "Kompetenz",
+      "created": "Benutzerkompetenz wurde erstellt ",
+      "delete": {
+        "question": "Soll die Benutzerkompetenz {{ name }} wirklich dauerhaft gelöscht werden?"
+      },
+      "deleted": "Benutzerkompetenz wurde gelöscht",
+      "detail": {
+        "title": "Benutzerkompetenz"
+      },
+      "home": {
+        "createLabel": "Benutzerkompetenz erstellen",
+        "createOrEditLabel": "Benutzerkompetenz erstellen oder bearbeiten",
+        "notFound": "Keine Kompetenzen gefunden",
+        "title": "Benutzerkompetenzen"
+      },
+      "updated": "Benutzerkompetenz wurde aktualisiert",
+      "userId": "Benutzer ID",
+      "userLevel": "Kompetenzlevel"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "ivolunteerManagerApp": {
+    "overview": {
+      "IssuedByCompany": "Erstellt von",
+      "activityInfo": "Um die Aktivität {{param}} abzuschließen musst du <strong>{{ param2 }} {{ param3 }}</strong> im Zeitraum von <strong>{{dateFrom}} - {{ dateTo }}</strong> erreichen",
+      "added": "Das Ziel {{ param }} wurde zu deiner Liste hinzugefügt",
+      "awardedBadge": "Awardbelohnungen",
+      "completeCompetence": "Die Bedingung {{operator}} als {{value}} muss für die Kompetenz {{comp}} erfüllt sein!",
+      "completeGoal": "Dieses Ziel musst du zuerst abschließen:",
+      "createPersonalGoal": "Persönliches Ziel erstellen",
+      "detail": {
+        "title": "Ziel"
+      },
+      "goalAward": {
+        "rewards": "Abschlussbelohnungen"
+      },
+      "goalRequirements": {
+        "amount": "Anzahl",
+        "displayMeasurement": "Anzeigeeinheit",
+        "info": "Abschlusskriterien",
+        "instance": "Objekt",
+        "operator": "Operator",
+        "ruleType": "Regeltyp"
+      },
+      "hideRequirements": "Kriterien verstecken",
+      "home": {
+        "notFound": "Aktuell sind keine Ziele verfügbar",
+        "title": "Verfügbare Ziele"
+      },
+      "increaseLevel": "Dein Kompetenzlevel für {{param}} wird um <strong>{{param2}}</strong> erhöht",
+      "institution": "Institution",
+      "needBadge": "Du musst das folgende Abzeichen besitzen:",
+      "personalGoalInfo": "Aktuell sind wohl keine Ziele mehr verfügbar :( Du kannst dir Hier aber eigene Ziele erstellen:",
+      "receiveBadge": "Du bekommst das folgenden Abzeichen:",
+      "remove": "Das Ziel {{ param }} wurde von deiner Liste entfernt",
+      "requirements": "Abschlusskriterien",
+      "showRequirements": "Kriterien anzeigen"
+    }
+  }
+}

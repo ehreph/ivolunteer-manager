@@ -1,0 +1,38 @@
+{
+  "name": "GoalAward",
+  "fields": [
+    {
+      "fieldName": "awardType",
+      "fieldType": "GlobalType",
+      "fieldValues": "GOAL,COMPETENCE,ACTIVITY,BADGE"
+    },
+    {
+      "fieldName": "generalId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "increaseLevel",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "goal",
+      "otherEntityRelationshipName": "awardedCompetence",
+      "relationshipName": "goal",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210315165249",
+  "entityTableName": "goal_award",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ivolunteerManager"]
+}

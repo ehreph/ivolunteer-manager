@@ -1,0 +1,67 @@
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+        <div class=" card ">
+            <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+                <h2 class="card-header" id="jhi-activity-heading"
+                    jhiTranslate="ivolunteerManagerApp.activity.home.trackProgress">Track Activity
+                    progress</h2>
+
+                <div class="card-body">
+                    <jhi-alert-error></jhi-alert-error>
+                    <div class="row col mx-auto">
+                        <div class="form-group col mx-auto">
+                            <label class="form-control-label"
+                                   jhiTranslate="ivolunteerManagerApp.activity.trackProgress.instance"
+                                   for="field_activity">Activity</label>
+                            <select [(ngModel)]="selectedActivity" class="form-control" id="field_activity"
+                                    name="activityId"
+                                    formControlName="activityId">
+                                <option [ngValue]="activity"
+                                        *ngFor="let activity of activities;trackBy: trackId">{{ activity.name }}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row col mx-auto " *ngIf="selectedActivity">
+
+                        <div class="form-group col-auto mx-auto">
+                            <label class="form-control-label"
+                                   jhiTranslate="ivolunteerManagerApp.activity.trackProgress.amount"
+                                   for="field_value">Amount</label>
+
+                            <div class="input-group">
+                                <input type="number" class="form-control" name="value"
+                                       id="field_value"
+                                       formControlName="value"/>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">{{selectedActivity.attributesUnitName}}</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-group col mx-auto">
+                            <label class="form-control-label"
+                                   jhiTranslate="ivolunteerManagerApp.activity.trackProgress.date"
+                                   for="field_date">Date</label>
+                            <input type="date" class="form-control" name="field_date"
+                                   id="field_date"
+                                   formControlName="date"/>
+                        </div>
+                    </div>
+
+                    <div class="float-right p-3">
+                        <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                            <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                        </button>
+
+                        <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving"
+                                class="btn btn-primary">
+                            <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

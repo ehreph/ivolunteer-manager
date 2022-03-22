@@ -1,0 +1,72 @@
+<div [ngSwitch]="requirement.type">
+  <ng-container *ngSwitchCase="GlobalType.BADGE">
+    <jhi-completed-extension [completed]="completed"></jhi-completed-extension>
+    <span class="font-weight-bold">
+          <fa-icon icon="award"></fa-icon>
+      {{ 'ivolunteerManagerApp.GlobalType.BADGE' | translate }}: {{requirement.entityName}}</span>
+  </ng-container>
+  <ng-container *ngSwitchCase="GlobalType.GOAL">
+    <jhi-completed-extension [completed]="completed"></jhi-completed-extension>
+    <span class="font-weight-bold">
+      <fa-icon icon="bullseye"></fa-icon>
+      {{ 'ivolunteerManagerApp.GlobalType.GOAL' | translate }}: {{requirement.entityName}}
+    </span>
+  </ng-container>
+  <ng-container *ngSwitchCase="GlobalType.COMPETENCE">
+    <div class="row">
+      <div class="col-8">
+        <jhi-completed-extension [completed]="completed"></jhi-completed-extension>
+        <span class="font-weight-bold">
+          <fa-icon icon="book"></fa-icon>
+          {{ 'ivolunteerManagerApp.GlobalType.COMPETENCE' | translate }}: {{requirement.entityName}}
+        </span>
+        <div>
+          <span jhiTranslate="finishingCondition"></span>
+          <span class="badge badge-pill badge-info">
+        <span>{{data.amount.toFixed(2)}} {{'userLevel'|translate}}</span>
+        <span>{{'ivolunteerManagerApp.RuleOperator.' + requirement.operator|translate}}</span>
+        <span>{{requirement.value.toFixed(2)}} {{'neededLevel'|translate}}</span>
+      </span>
+        </div>
+      </div>
+      <div class="col-4">
+        <jhi-progress-circle [data]="data" [showRelative]="showRelative"
+        ></jhi-progress-circle>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="GlobalType.ACTIVITY">
+    <div class="row">
+      <div class="col-8">
+        <jhi-completed-extension [completed]="completed"></jhi-completed-extension>
+        <span class="font-weight-bold">
+          <fa-icon icon="running"></fa-icon>
+          {{ 'ivolunteerManagerApp.GlobalType.ACTIVITY' | translate }}: {{requirement.entityName}}
+        </span>
+        <div>
+          <span jhiTranslate="finishingCondition"></span>
+          <span class="badge badge-pill badge-info">
+            {{data.amount}}
+            <span jhiTranslate="of"></span>
+            {{requirement.value}} ({{requirement.attributesUnitName}})
+            <span jhiTranslate="achieved"></span>
+          </span>
+        </div>
+        <div>
+          <span jhiTranslate="measurementPeriod"></span>
+          <span class="badge badge-pill badge-info">
+            <fa-icon icon="calendar-alt"></fa-icon>
+            {{requirement.actStartDate|date:'dd.MM.yyyy'}}
+            -
+            <fa-icon icon="calendar-alt"></fa-icon>
+            {{requirement.actEndDate|date:'dd.MM.yyyy'}}
+          </span>
+        </div>
+      </div>
+      <div class="col-4">
+        <jhi-progress-circle [data]="data" [showRelative]="showRelative"
+        ></jhi-progress-circle>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,10 @@
+{
+  "configuration": {
+    "filter": "Filter (nach Präfix)",
+    "table": {
+      "prefix": "Präfix",
+      "properties": "Eigenschaften"
+    },
+    "title": "Konfiguration"
+  }
+}

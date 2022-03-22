@@ -1,0 +1,11 @@
+{
+  "ivolunteerManagerApp": {
+    "GlobalType": {
+      "ACTIVITY": "Activity",
+      "BADGE": "Badge",
+      "COMPETENCE": "Competence",
+      "GOAL": "Goal",
+      "null": ""
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ivolunteerManagerApp": {
+    "goalRequirements": {
+      "attributes": "Attributes",
+      "created": "A new Goal Requirements is created with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Goal Requirements {{ id }}?"
+      },
+      "deleted": "A Goal Requirements is deleted with identifier {{ param }}",
+      "detail": {
+        "title": "Goal Requirements"
+      },
+      "displayMeasurement": "Display Measurement",
+      "generalId": "General Id",
+      "goal": "Goal",
+      "home": {
+        "createLabel": "Create a new Goal Requirements",
+        "createOrEditLabel": "Create or edit a Goal Requirements",
+        "notFound": "No Goal Requirements found",
+        "title": "Goal Requirements"
+      },
+      "operator": "Operator",
+      "instance": "Object",
+      "ruleType": "Rule Type",
+      "type": "Type",
+      "updated": "A Goal Requirements is updated with identifier {{ param }}",
+      "value": "Value"
+    }
+  }
+}

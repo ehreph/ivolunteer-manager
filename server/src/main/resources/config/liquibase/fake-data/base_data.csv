@@ -1,0 +1,25 @@
+id;name;attributes_id;max_level;created_by_user_id;is_personal;base_type;info;institution_id
+1;Abzeichen1;;0;1;;badge;test badge;
+2;Abzeichen2;;0;1;;badge;test badge;
+3;Abzeichen3;;0;1;;badge;test badge;
+4;Abzeichen4;;0;1;;badge;test badge;
+5;Abzeichen5;;0;1;;badge;test badge;
+6;Abzeichen6;;0;1;;badge;test badge;
+7;Abzeichen7;;0;1;;badge;test badge;
+8;Abzeichen8;;0;1;;badge;test badge;
+9;Abzeichen9;;0;1;;badge;test badge;
+10;Abzeichen10;;0;1;;badge;test badge;
+11;social;;100;1;;competence;test competence;
+12;digital;;100;1;;competence;test competence;
+13;language;;100;1;;competence;test competence;
+14;science;;100;1;;competence;test competence;
+15;literacy;;100;1;;competence;test competence;
+16;civic;;100;1;;competence;test competence;
+17;technology;;100;1;;competence;test competence;
+18;engineering;;100;1;;competence;test competence;
+19;SQL Metrics Car;;0;1;false;goal;test goal;
+20;interface Phased lime;;0;1;false;goal;test goal;
+21;Interactions ROI;;0;1;false;goal;test goal;
+22;Fresh;;0;1;false;goal;test goal;
+23;Running;1;0;1;null;activity;test activity;
+24;Swimming;2;0;1;null;activity;test activity;

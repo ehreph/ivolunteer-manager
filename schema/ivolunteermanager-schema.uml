@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.SCHEMA:ivolunteermanager</OriginalElement>
+  <nodes>
+    <node x="291.9793660115416" y="-188.76700245529835">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.badge</node>
+    <node x="883.5001011497161" y="40.48844675618409">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_goals</node>
+    <node x="629.4103742859634" y="-416.0003657240519">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal</node>
+    <node x="785.7161011497161" y="-221.76700245529835">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal_award</node>
+    <node x="767.7161011497161" y="331.3591451759909">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user_authority</node>
+    <node x="-294.5132429216205" y="-59.807287407566946">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_competence</node>
+    <node x="274.4793660115416" y="-12.345324893785232">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_badge</node>
+    <node x="1092.0810405102457" y="-221.76700245529835">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal_requirements</node>
+    <node x="1158.128154785675" y="-438.0005361036958">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.rule_attribute</node>
+    <node x="259.00859219819216" y="1527.737037206839">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_persistent_audit_evt_data</node>
+    <node x="629.4103742859634" y="-719.814170379644">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.institution</node>
+    <node x="1572.6033324290154" y="-416.0003657240519">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity</node>
+    <node x="1557.6033324290154" y="18.48844675618409">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity_progress</node>
+    <node x="247.9792128371933" y="1341.3841176328397">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_persistent_audit_event</node>
+    <node x="521.7963707856877" y="331.3591451759909">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user</node>
+    <node x="-145.95829975100597" y="-188.76700245529833">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence</node>
+    <node x="521.4448757090258" y="1270.1685465715104">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.databasechangeloglock</node>
+    <node x="-13.486450034639233" y="1277.9577496563434">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.databasechangelog</node>
+    <node x="-74.68694068144424" y="-59.807287407566946">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence_progress</node>
+    <node x="805.1396975966496" y="538.0464386023585">bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_authority</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_competence" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user" relationship="REFERENCES">
+      <point x="2.4292162046890553E-4" y="61.500287407566944" />
+      <point x="-218.513" y="164.0" />
+      <point x="271.5" y="164.0" />
+      <point x="271.5" y="259.0" />
+      <point x="620.796" y="259.0" />
+      <point x="-3.707856876644655E-4" y="-193.5001451759909" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence_progress" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user" relationship="REFERENCES">
+      <point x="-5.931855575802558E-5" y="72.50028740756694" />
+      <point x="15.313" y="164.0" />
+      <point x="271.5" y="164.0" />
+      <point x="271.5" y="259.0" />
+      <point x="620.796" y="259.0" />
+      <point x="-3.707856876644655E-4" y="-193.5001451759909" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_competence" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence" relationship="REFERENCES">
+      <point x="76.00024292162047" y="2.8740756694611846E-4" />
+      <point x="-108.0" y="1.693" />
+      <point x="-108.0" y="80.693" />
+      <point x="-312.013" y="80.693" />
+      <point x="-312.013" y="-138.267" />
+      <point x="-65.99970024899403" y="2.4552983290959673E-6" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence_progress" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence" relationship="REFERENCES">
+      <point x="-90.00005931855576" y="2.874075669456744E-4" />
+      <point x="-108.0" y="12.693" />
+      <point x="-108.0" y="80.693" />
+      <point x="-312.013" y="80.693" />
+      <point x="-312.013" y="-138.267" />
+      <point x="-65.99970024899403" y="2.4552983290959673E-6" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal_requirements" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal" relationship="REFERENCES">
+      <point x="-84.50004051024575" y="2.4552983575176768E-6" />
+      <point x="1072.0" y="-105.267" />
+      <point x="1072.0" y="-332.5" />
+      <point x="85.9996257140366" y="3.657240519032712E-4" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.institution" relationship="REFERENCES">
+      <point x="-4.0" y="-83.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_badge" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.badge" relationship="REFERENCES">
+      <point x="0.0" y="-61.5" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user_authority" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_authority" relationship="REFERENCES">
+      <point x="8.923596446933516" y="39.0" />
+      <point x="0.0" y="-28.0" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_goals" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user" relationship="REFERENCES">
+      <point x="-1.0114971610164503E-4" y="72.49955324381591" />
+      <point x="967.0" y="259.0" />
+      <point x="620.796" y="259.0" />
+      <point x="-3.707856876644655E-4" y="-193.5001451759909" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal_requirements" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.rule_attribute" relationship="REFERENCES">
+      <point x="-4.0510245753466734E-5" y="-116.49999754470164" />
+      <point x="1176.581" y="-257.0" />
+      <point x="1243.628" y="-257.0" />
+      <point x="-1.547856750221399E-4" y="72.49953610369585" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_goals" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal" relationship="REFERENCES">
+      <point x="83.4998988502839" y="-4.4675618408973605E-4" />
+      <point x="1072.0" y="112.988" />
+      <point x="1072.0" y="-332.5" />
+      <point x="85.9996257140366" y="3.657240519032712E-4" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user_authority" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user" relationship="REFERENCES">
+      <point x="-1.0114971610164503E-4" y="-39.000145175990895" />
+      <point x="859.216" y="259.0" />
+      <point x="620.796" y="259.0" />
+      <point x="-3.707856876644655E-4" y="-193.5001451759909" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity_progress" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity" relationship="REFERENCES">
+      <point x="14.999667570984684" y="-83.5" />
+      <point x="14.999667570984684" y="50.5" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user" relationship="REFERENCES">
+      <point x="-3.7428596340305376E-4" y="83.5003657240519" />
+      <point x="715.41" y="164.0" />
+      <point x="271.5" y="164.0" />
+      <point x="271.5" y="259.0" />
+      <point x="620.796" y="259.0" />
+      <point x="-3.707856876644655E-4" y="-193.5001451759909" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity_progress" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.rule_attribute" relationship="REFERENCES">
+      <point x="-3.3242901531593816E-4" y="-83.50044675618409" />
+      <point x="1641.603" y="-257.0" />
+      <point x="1243.628" y="-257.0" />
+      <point x="-1.547856750221399E-4" y="72.49953610369585" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.rule_attribute" relationship="REFERENCES">
+      <point x="-3.3242901531593816E-4" y="50.5003657240519" />
+      <point x="1641.603" y="-257.0" />
+      <point x="1243.628" y="-257.0" />
+      <point x="-1.547856750221399E-4" y="72.49953610369585" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_badge" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user" relationship="REFERENCES">
+      <point x="-3.6601154158688587E-4" y="61.50032489378523" />
+      <point x="357.979" y="164.0" />
+      <point x="271.5" y="164.0" />
+      <point x="271.5" y="259.0" />
+      <point x="620.796" y="259.0" />
+      <point x="-3.707856876644655E-4" y="-193.5001451759909" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity_progress" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user" relationship="REFERENCES">
+      <point x="-3.3242901531593816E-4" y="83.49955324381591" />
+      <point x="1641.603" y="259.0" />
+      <point x="620.796" y="259.0" />
+      <point x="-3.707856876644655E-4" y="-193.5001451759909" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_persistent_audit_evt_data" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_persistent_audit_event" relationship="REFERENCES">
+      <point x="-20.02937936099886" y="-50.5" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal_award" target="bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal" relationship="REFERENCES">
+      <point x="82.4998988502839" y="2.4552983575176768E-6" />
+      <point x="1072.0" y="-149.267" />
+      <point x="1072.0" y="-332.5" />
+      <point x="85.9996257140366" y="3.657240519032712E-4" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5986798679867986" showDependencies="false" x="804.6030702970854" y="91.50000000000011" />
+  <SelectedNodes>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.badge</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_goals</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal_award</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user_authority</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_competence</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.user_badge</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.goal_requirements</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.rule_attribute</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_persistent_audit_evt_data</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.institution</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.activity_progress</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_persistent_audit_event</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_user</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.databasechangeloglock</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.databasechangelog</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.competence_progress</node>
+    <node>bd7cd4e2-c0b8-4f39-90f0-2ddeb8dd6e69.TABLE:ivolunteermanager.jhi_authority</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

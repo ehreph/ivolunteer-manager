@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="autoIncrement" value="true"/>
+    <!--
+        add progress tracking timestamps
+    -->
+    <changeSet id="20210705000000-1" author="ehreph">
+        <addColumn tableName="user_goals">
+            <column name="finished_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet id="20210705000000-2" author="ehreph">
+        <addColumn tableName="user_badge">
+            <column name="finished_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <!--
+       Added the entity Competence Progress.
+   -->
+    <changeSet id="20210705000000-4" author="ehreph">
+        <createTable tableName="competence_progress">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="tracking_date" type="timestamp">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_level_change" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="competence_id" type="bigint">
+                <constraints nullable="true"/>
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210705000000-5" author="ehreph">
+        <addForeignKeyConstraint baseColumnNames="competence_id"
+                                 baseTableName="competence_progress"
+                                 constraintName="fk_competence_progress_competence_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="competence"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="competence_progress"
+                                 constraintName="fk_competence_progress_jhi_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+    </changeSet>
+
+
+</databaseChangeLog>

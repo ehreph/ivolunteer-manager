@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd"
+    objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1634856275479-10" author="philipp">
+        <dropForeignKeyConstraint baseTableName="jhi_persistent_audit_evt_data"
+                                  constraintName="fk_evt_pers_audit_evt_data"/>
+    </changeSet>
+    <changeSet id="1634856275479-11" author="philipp">
+        <dropTable cascadeConstraints="true" tableName="jhi_persistent_audit_evt_data"/>
+    </changeSet>
+    <changeSet id="1634856275479-12" author="philipp">
+        <dropIndex indexName="idx_persistent_audit_event" tableName="jhi_persistent_audit_event"/>
+    </changeSet>
+    <changeSet id="1634856275479-1" author="philipp">
+        <addNotNullConstraint columnDataType="BIGINT" columnName="badge_id" tableName="user_badge" validate="true"/>
+    </changeSet>
+    <changeSet id="1634856275479-2" author="philipp">
+        <addNotNullConstraint columnDataType="BIGINT" columnName="comp_id" tableName="user_competence" validate="true"/>
+    </changeSet>
+    <changeSet id="1634856275479-3" author="philipp">
+        <modifyDataType columnName="email" newDataType="VARCHAR(254)" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet id="1634856275479-5" author="philipp">
+        <addNotNullConstraint columnDataType="DOUBLE" columnName="max_level" tableName="competence" validate="true"/>
+    </changeSet>
+    <changeSet id="1634856275479-6" author="philipp">
+        <modifyDataType columnName="principal" newDataType="VARCHAR(255)" tableName="jhi_persistent_audit_event"/>
+    </changeSet>
+    <changeSet id="1634856275479-7" author="philipp">
+        <addNotNullConstraint columnDataType="BIGINT" columnName="user_id" tableName="user_badge" validate="true"/>
+    </changeSet>
+    <changeSet id="1634856275479-8" author="philipp">
+        <addNotNullConstraint columnDataType="BIGINT" columnName="user_id" tableName="user_competence" validate="true"/>
+    </changeSet>
+    <changeSet id="1634856275479-9" author="philipp">
+        <addNotNullConstraint columnDataType="BIGINT" columnName="user_id" tableName="user_goals" validate="true"/>
+    </changeSet>
+
+</databaseChangeLog>

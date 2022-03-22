@@ -1,0 +1,36 @@
+<form (ngSubmit)="save()" [formGroup]="editForm" name="editForm" novalidate role="form">
+    <div class="modal-header">
+        <h4 id="jhi-user-badge-heading" jhiTranslate="ivolunteerManagerApp.userBadge.home.createOrEditLabel">
+            Create or edit a User Badge</h4>
+    </div>
+    <div class="modal-body">
+
+        <div>
+            <jhi-alert-error></jhi-alert-error>
+
+
+            <div class="form-group">
+                <label class="form-control-label" jhiTranslate="ivolunteerManagerApp.userBadge.badge"
+                       for="field_badge">Badge</label>
+                <select class="form-control" id="field_badge" name="badge" formControlName="badgeId">
+                    <option [ngValue]="null"></option>
+                    <option [ngValue]="badgeOption.id"
+                            *ngFor="let badgeOption of badges; trackBy: trackById">{{ badgeOption.name }}</option>
+                </select>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+        <button (click)="cancel()" class="btn btn-secondary" id="cancel-save" type="button">
+            <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button [disabled]="editForm.invalid || isSaving" class="btn btn-primary" id="save-entity" type="submit">
+            <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+
+</form>

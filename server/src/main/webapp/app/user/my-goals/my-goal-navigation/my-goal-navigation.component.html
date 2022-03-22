@@ -1,0 +1,14 @@
+<div class="btn-group flex-wrap">
+  <button type="button"
+          [routerLink]="['./personal-goal/new']"
+          class="btn btn-primary order-0">
+    <fa-icon icon="plus"></fa-icon>
+    <span jhiTranslate="ivolunteerManagerApp.myGoals.createPersonalGoal">Create personal Goal</span>
+  </button>
+  <button type="button"
+          [routerLink]="['./activity-progress/track']"
+          class="btn btn-secondary order-1">
+    <fa-icon icon="running"></fa-icon>
+    <span jhiTranslate="ivolunteerManagerApp.myGoals.trackActivityProgress">Track Activity Progress</span>
+  </button>
+</div>

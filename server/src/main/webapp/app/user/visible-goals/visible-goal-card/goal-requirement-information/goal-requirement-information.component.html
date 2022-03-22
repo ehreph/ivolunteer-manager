@@ -1,0 +1,47 @@
+<div *ngIf="goal.requirements&& goal.requirements.length>0" class="py-3">
+  <div class="mb-2">
+    <button type="button" class="btn btn-sm btn-outline-primary" (click)="toggleRequirements()"
+            [attr.aria-expanded]="showRequirements">
+            <span
+              [jhiTranslate]="!showRequirements ? 'ivolunteerManagerApp.overview.showRequirements' : 'ivolunteerManagerApp.overview.hideRequirements'"></span>
+    </button>
+  </div>
+
+  <ul class="list-group" [(ngbCollapse)]="!showRequirements">
+    <li *ngFor="let requirement of goal.requirements" class="list-group-item">
+      <div [ngSwitch]="requirement.type">
+
+        <ng-container *ngSwitchCase="GlobalType.BADGE">
+          <fa-icon icon="award"></fa-icon>
+          <span jhiTranslate="ivolunteerManagerApp.overview.needBadge"></span>
+          <span class="font-weight-bold">{{requirement.entityName}}</span>
+        </ng-container>
+
+        <ng-container *ngSwitchCase="GlobalType.GOAL">
+          <fa-icon icon="bullseye"></fa-icon>
+          <span jhiTranslate="ivolunteerManagerApp.overview.completeGoal"></span>
+          <span class="font-weight-bold">{{requirement.entityName}}</span>
+        </ng-container>
+        <ng-container *ngSwitchCase="GlobalType.ACTIVITY">
+          <fa-icon icon="running"></fa-icon>
+          <span jhiTranslate="ivolunteerManagerApp.overview.activityInfo"
+                [translateValues]="
+                {param: requirement.entityName,
+                param2: requirement.value,
+                param3: requirement.attributesUnitName,
+                dateFrom: requirement.actStartDate|date:'dd.MM.yyyy',
+                dateTo: requirement.actEndDate|date:'dd.MM.yyyy'}"></span>
+
+        </ng-container>
+        <ng-container *ngSwitchCase="GlobalType.COMPETENCE">
+          <fa-icon icon="book"></fa-icon>
+          <span jhiTranslate="ivolunteerManagerApp.overview.completeCompetence"
+            [translateValues]="
+            {comp:requirement.entityName,
+            operator:'ivolunteerManagerApp.RuleOperator.'+requirement.operator|translate ,
+            value:requirement.value}"></span>
+        </ng-container>
+      </div>
+    </li>
+  </ul>
+</div>

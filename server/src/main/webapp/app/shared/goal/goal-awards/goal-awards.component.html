@@ -1,0 +1,24 @@
+<form [formGroup]="editForm">
+  <div class="card p-3">
+    <div class="mr-1 mb-1 row">
+      <h4 class="col-6" jhiTranslate="ivolunteerManagerApp.goal.goalAward.title">Goal Rewards</h4>
+
+      <button type="button"
+              class="btn btn-primary float-right ml-auto"
+              (click)="addGoalAward()">
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="ivolunteerManagerApp.goal.goalAward.create">add Reward</span>
+      </button>
+    </div>
+    <div class="list-group m-3">
+        <jhi-goal-award-item *ngFor="let goalAward of goalAwards.controls; let i=index"
+                             [parentForm]="editForm"
+                             [index]="i"
+                             [formArrayName]="'goalAwards'"
+                             [model]="goalAward.value"
+                             [existingBadges]="existingBadges"
+                             [existingCompetences]="existingCompetences"
+                             (removeClicked)="remove(i)"></jhi-goal-award-item>
+    </div>
+  </div>
+</form>
